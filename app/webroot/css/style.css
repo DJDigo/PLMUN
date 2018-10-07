@@ -99,6 +99,7 @@ header {
     position: relative;
     border-left: 1px solid #16375a;
     font-weight: bold;
+    transition: 0.3s;
 }
 .navigation-item:last-child {
     border-right: 1px solid #16375a;
@@ -231,9 +232,19 @@ header {
     border-radius: 3px;
     background: #fff;
 }
+.course-like:hover {
+    background: #3e76b1;
+    color: #fff;
+}
 .course-dislike {
     border-right: none;
-    color: #ff0000;
+    color: #ff4848;
+    transition: 0.3s;
+}
+.course-dislike:hover {
+    background: #ff4848;
+    transition: 0.3s;
+    color: #fff;
 }
 .courses-description p {
     height: 65px;
@@ -255,6 +266,11 @@ header {
     text-decoration: none;
     color: #152f49;
     background: #fff;
+}
+.feedback-results:hover {
+    background: #ff9a00;
+    color: #fff;
+    transition: 0.3s;
 }
 .modal {
     position: fixed;
