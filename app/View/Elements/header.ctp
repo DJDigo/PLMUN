@@ -1,6 +1,8 @@
 <div class="header-content">
     <div class="header-logo">
-        <img src="./img/common/plmun-logo.png" alt="logo">
+        <a href="">
+            <img src="./img/common/plmun-logo.png" alt="logo">
+        </a>
     </div>
     <div class="header-side">
         <div class="header-school-year">
