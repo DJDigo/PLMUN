@@ -33,17 +33,18 @@
           "department": "CITCS"
         }
       ],
-      "Dean": [
+      "dean": [
         {
-          "deanName": "Duterte",
+          "facultyName": "Duterte",
           "department": "CITCS",
-          "yearInService": 5
+          "numbersOfFeedback": 123
         }
       ],
-      "Faculty": [
+      "faculty": [
         {
           "facultyName": "Faculty",
-          "department": "CITCS"
+          "department": "CITCS",
+          "numbersOfFeedback": 123
         }
       ]
     }
@@ -58,17 +59,18 @@
           "department": "CAS"
         }
       ],
-      "Dean": [
+      "dean": [
         {
-          "deanName": "Duterte",
+          "facultyName": "Duterte",
           "department": "CAS",
-          "yearInService": 5
+          "numbersOfFeedback": 123
         }
       ],
-      "Faculty": [
+      "faculty": [
         {
           "facultyName": "Faculty",
-          "department": "CAS"
+          "department": "CAS",
+          "numbersOfFeedback": 123
         }
       ]
     }
@@ -107,17 +109,18 @@
           "department": "CBA"
         }
       ],
-      "Dean": [
+      "dean": [
         {
-          "deanName": "Duterte",
+          "facultyName": "Duterte",
           "department": "CBA",
-          "yearInService": 5
+          "numbersOfFeedback": 123
         }
       ],
-      "Faculty": [
+      "faculty": [
         {
           "facultyName": "Faculty",
-          "department": "CBA"
+          "department": "CBA",
+          "numbersOfFeedback": 123
         }
       ]
     }
@@ -150,17 +153,18 @@
           "department": "CTE"
         }
       ],
-      "Dean": [
+      "dean": [
         {
-          "deanName": "Duterte",
+          "facultyName": "Duterte",
           "department": "CBA",
-          "yearInService": 5
+          "numbersOfFeedback": 123
         }
       ],
-      "Faculty": [
+      "faculty": [
         {
           "facultyName": "Faculty",
-          "department": "CBA"
+          "department": "CBA",
+          "numbersOfFeedback": 123
         }
       ]
     }
@@ -175,39 +179,43 @@
           "department": "CCJ"
         }
       ],
-      "Dean": [
+      "dean": [
         {
-          "deanName": "Duterte",
+          "facultyName": "Duterte",
           "department": "CCJ",
-          "yearInService": 5
+          "numbersOfFeedback": 123
         }
       ],
-      "Faculty": [
+      "faculty": [
         {
           "facultyName": "Faculty",
-          "department": "CCJ"
+          "department": "CCJ",
+          "numbersOfFeedback": 123
         }
       ]
     }
   ],
-  "Offices" : [
+  "offices" : [
     {
-      "Registrar": [
+      "registrar": [
         {
           "facultyName": "Registrar",
-          "department": "OFFICE"
+          "department": "OFFICE",
+          "numbersOfFeedback": 123
         }
       ],
-      "Treasury": [
+      "treasury": [
         {
           "facultyName": "Treasury",
-          "department": "OFFICE"
+          "department": "OFFICE",
+          "numbersOfFeedback": 123
         }
       ],
-      "Guidance": [
+      "guidance": [
         {
           "facultyName": "Guidance",
-          "department": "OFFICE"
+          "department": "OFFICE",
+          "numbersOfFeedback": 123
         }
       ]
     }
