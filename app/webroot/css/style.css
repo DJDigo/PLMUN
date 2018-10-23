@@ -442,6 +442,7 @@ header {
     width: 80%;
     padding-left: 15px;
     box-sizing: border-box;
+    vertical-align: top;
 }
 .modal-feedback-form {
     padding: 0 10px 10px;
@@ -487,4 +488,12 @@ header {
     display: block;
     font-weight: bold;
     padding-bottom: 20px;
+}
+.required {
+    font-size: 20px;
+    color: #ff0000;
+    line-height: 0;
+    display: inline-block;
+    padding: 7px 0;
+    vertical-align: middle;
 }
