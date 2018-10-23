@@ -500,3 +500,9 @@ header {
     padding: 7px 0;
     vertical-align: middle;
 }
+.modal-feedback-error {
+    font-size: 14px;
+    color: #ff0000;
+    padding: 3px 0;
+    display: block;
+}

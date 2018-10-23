@@ -18,7 +18,7 @@
             <div class="modal-feedback-title">
                 <span>Feedback Form</span>
                 <span class="modal-feedback-note">
-                    Thank you for visiting our office. It was a great pleasure to serve you. Plese check the appropriate answer.
+                    Thank you for visiting our office. It was a great pleasure to serve you. Please rate our service.
                 </span>
                 <div class="modal-feeback-guidelines">
                     <span class="modal-guidelines-list">5 - Excellent</span>
@@ -34,7 +34,6 @@
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
                             <select class="modal-feedback-selectbox">
-                                <option>--</option>
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -49,7 +48,6 @@
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
                             <select class="modal-feedback-selectbox">
-                                <option>--</option>
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -64,7 +62,6 @@
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
                             <select class="modal-feedback-selectbox">
-                                <option>--</option>
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -79,7 +76,6 @@
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
                             <select class="modal-feedback-selectbox">
-                                <option>--</option>
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -94,7 +90,6 @@
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
                             <select class="modal-feedback-selectbox">
-                                <option>--</option>
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -109,7 +104,6 @@
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
                             <select class="modal-feedback-selectbox">
-                                <option>--</option>
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -124,7 +118,6 @@
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
                             <select class="modal-feedback-selectbox">
-                                <option>--</option>
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -139,7 +132,6 @@
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
                             <select class="modal-feedback-selectbox">
-                                <option>--</option>
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -156,11 +148,13 @@
 
             <div class="modal-feedback-emai">
                 <label class="modal-feedback-label">Email Address: <span class="required">*</span></label>
-                <input type="emai" class="modal-feedback-input">
+                <input type="email" class="modal-feedback-input" placeholder="Email Address">
+                <span class="modal-feedback-error">please input you email address</span>
             </div>
 
             <div class="modal-feedback-msg">
                 <textarea class="modal-feedback-textarea" placeholder="write your suggestions/feedback..."></textarea>
+                <span class="modal-feedback-error">please write you feedback/suggestion</span>
                 <button class="button-publish">Publish</button>
             </div>
         </div>

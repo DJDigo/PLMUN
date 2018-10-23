@@ -8,6 +8,8 @@ $(function() {
 function handleFeedbackModal() {
   $('html').delegate('.feedback-results', 'click',function() {
     $('.modal').fadeIn(300);
+    $('.modal-course-title').text($(this).parents('.courses-item').find('.course-name').text());
+    $('.modal-course-department').text($(this).parents('.courses-item').find('.course-department').text());
   }); 
 
   $('.close-modal').on('click', function() {
