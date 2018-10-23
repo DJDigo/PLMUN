@@ -37,6 +37,7 @@
         {
           "facultyName": "Duterte",
           "department": "CITCS",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
           "numbersOfFeedback": 123
         }
       ],
@@ -44,6 +45,7 @@
         {
           "facultyName": "Faculty",
           "department": "CITCS",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
           "numbersOfFeedback": 123
         }
       ]
@@ -63,6 +65,7 @@
         {
           "facultyName": "Duterte",
           "department": "CAS",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
           "numbersOfFeedback": 123
         }
       ],
@@ -70,6 +73,7 @@
         {
           "facultyName": "Faculty",
           "department": "CAS",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
           "numbersOfFeedback": 123
         }
       ]
@@ -113,6 +117,7 @@
         {
           "facultyName": "Duterte",
           "department": "CBA",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
           "numbersOfFeedback": 123
         }
       ],
@@ -120,6 +125,7 @@
         {
           "facultyName": "Faculty",
           "department": "CBA",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
           "numbersOfFeedback": 123
         }
       ]
@@ -157,6 +163,7 @@
         {
           "facultyName": "Duterte",
           "department": "CBA",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
           "numbersOfFeedback": 123
         }
       ],
@@ -164,6 +171,7 @@
         {
           "facultyName": "Faculty",
           "department": "CBA",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
           "numbersOfFeedback": 123
         }
       ]
@@ -183,6 +191,7 @@
         {
           "facultyName": "Duterte",
           "department": "CCJ",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
           "numbersOfFeedback": 123
         }
       ],
@@ -190,6 +199,7 @@
         {
           "facultyName": "Faculty",
           "department": "CCJ",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
           "numbersOfFeedback": 123
         }
       ]
@@ -201,6 +211,7 @@
         {
           "facultyName": "Registrar",
           "department": "OFFICE",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
           "numbersOfFeedback": 123
         }
       ],
@@ -208,6 +219,7 @@
         {
           "facultyName": "Treasury",
           "department": "OFFICE",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
           "numbersOfFeedback": 123
         }
       ],
@@ -215,6 +227,7 @@
         {
           "facultyName": "Guidance",
           "department": "OFFICE",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
           "numbersOfFeedback": 123
         }
       ]

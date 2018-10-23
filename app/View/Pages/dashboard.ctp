@@ -10,7 +10,7 @@
 </div>
 
 <div class="courses" id="course-page">
-    <h2>COURSES UNDER <span id="course-department">CITCS</span></h2>
+    <h2 id="course-department"></h2>
     <ul id="course-list">
     </ul>
 </div>

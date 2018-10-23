@@ -198,6 +198,9 @@ header {
     width: 100%;
     display: inline-block;
 }
+.courses {
+    min-height: 400px;
+}
 .courses h2 {
     font-size: 18px;
     font-weight: 700;

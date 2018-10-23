@@ -24,10 +24,9 @@ function handleShowListOfCourses( department, departmentAdmin ) {
     data: { 'courses': 10 },
     dataType: 'json',
     success: function(response) {
-      console.log(department + " -  " + departmentAdmin)
       if ( typeof departmentAdmin == "undefined" ) {
         response[department][0]['courses'].forEach((value,key) => {
-          $('#course-department').text(value['department']);
+          $('#course-department').text('Courses Under '+ value['department']);
           $('#course-list').append(
             `<li class="courses-item">
               <div class="courses-description">
@@ -43,12 +42,17 @@ function handleShowListOfCourses( department, departmentAdmin ) {
         });
       } else {
         response[department][0][departmentAdmin].forEach((value,key) => {
-          $('#course-department').text(value['department']);
+          if (departmentAdmin == 'dean') {
+            $('#course-department').text(value['department'] + " Dean " + value['facultyName']);
+          } else {
+            $('#course-department').text(value['department'] + " " + value['facultyName']);
+          }
           $('#course-list').append(
             `<li class="courses-item">
               <div class="courses-description">
                 <span class="course-name">`+ value['facultyName'] + `</span>
                 <span class="course-department">`+ value['department'] +`</span>
+                <p>`+ value['description'] +`</p>
               </div>
               <a class="feedback-results">
                 <span>Comments and Suggestions (<small class="course-suggestions-rate">`+ value['numbersOfFeedback'] +`</small>)</span>
@@ -68,7 +72,7 @@ function handleClickMenu() {
     let splitDepartment = getDataCategory.split('-');
     let getDepartmentAdmin;
     let getDepartment;
-    $('#course-page').fadeIn();
+    $('#course-page').fadeIn(300);
     $('#welcome-message').fadeOut();
 
     if ( $(this).hasClass('navigation-link')) {
