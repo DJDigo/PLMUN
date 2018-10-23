@@ -18,47 +18,59 @@
 <nav class="navigation">
     <ul class="navigation-list">
         <li class="navigation-item">
-            <span>CITCS</span>
+            <div class="navigation-item-course" data-category="citcs">
+                <span>CITCS</span>
+            </div>
             <div class="navigation-toggle">
-                <a href="#" class="navigation-link">Faculty</a>
-                <a href="#" class="navigation-link">Dean</a>
+                <div class="navigation-link" data-category="citcs-faculty">Faculty</div>
+                <div class="navigation-link" data-category="citcs-dean">Dean</div>
             </div>
         </li>
         <li class="navigation-item">
-            <span>CAS</span>
+            <div class="navigation-item-course" data-category="cas">
+                <span>CAS</span>
+            </div>
             <div class="navigation-toggle">
-                <a href="#" class="navigation-link">Faculty</a>
-                <a href="#" class="navigation-link">Dean</a>
+                <div class="navigation-link" data-category="cas-faculty">Faculty</div>
+                <div class="navigation-link" data-category="cas-dean">Dean</div>
             </div>
         </li>
         <li class="navigation-item">
-            <span>CBA<span>
+            <div class="navigation-item-course" data-category="cba">
+                <span>CBA<span>
+            </div>
             <div class="navigation-toggle">
-                <a href="#" class="navigation-link">Faculty</a>
-                <a href="#" class="navigation-link">Dean</a>
+                <div class="navigation-link" data-category="cba-faculty">Faculty</div>
+                <div class="navigation-link" data-category="cba-dean">Dean</div>
             </div>
         </li>
         <li class="navigation-item">
-            <span>CTE</span>
+            <div class="navigation-item-course" data-category="cte">
+                <span>CTE</span>
+            </div>
             <div class="navigation-toggle">
-                <a href="#" class="navigation-link">Faculty</a>
-                <a href="#" class="navigation-link">Dean</a>
+                <div class="navigation-link" data-category="cte-faculty">Faculty</div>
+                <div class="navigation-link" data-category="cte-dean">Dean</div>
             </div>
         </li>
         <li class="navigation-item">
-            <span>CCJ</span>
+            <div class="navigation-item-course" data-category="ccj">
+                <span>CCJ</span>
+            </div>
             <div class="navigation-toggle">
-                <a href="#" class="navigation-link">Faculty</a>
-                <a href="#" class="navigation-link">Dean</a>
+                <div class="navigation-link" data-category="ccj-faculty">Faculty</div>
+                <div class="navigation-link" data-category="ccj-dean">Dean</div>
             </div>
         </li>
         <li class="navigation-item">
-            <span>OFFICES</span>
+            <div class="navigation-item-course" data-category="offices">
+                <span>OFFICES</span>
+            </div>
             <div class="navigation-toggle">
-                <a href="#" class="navigation-link">Registrar</a>
-                <a href="#" class="navigation-link">Treasury</a>
-                <a href="#" class="navigation-link">Guidance</a>
-                <a href="#" class="navigation-link">NSTP</a>
+                <div class="navigation-link" data-category="offices-registrar">Registrar</div>
+                <div class="navigation-link" data-category="offices-treasury">Treasury</div>
+                <div class="navigation-link" data-category="offices-guidance">Guidance</div>
+                <div class="navigation-link" data-category="offices-nstp">NSTP</div>
             </div>
         </li>
     </ul>

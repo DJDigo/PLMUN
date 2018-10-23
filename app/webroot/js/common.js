@@ -1,11 +1,11 @@
 $(function() {
     handleFeedbackModal();
-    handleLikeAndDislike();
+    handleClickMenu();
 });
 
 // SHOW SUGGESTIONS AND FEEDBACK MODAL
 function handleFeedbackModal() {
-    $('.feedback-results').on('click',function() {
+    $('html').delegate('.feedback-results', 'click',function() {
         $('.modal').fadeIn(300);
     }); 
 
@@ -14,31 +14,47 @@ function handleFeedbackModal() {
     })
 }
 
-function handleLikeAndDislike() {
-    $('.course-like').on('click',function(){
-        let a = $(this).find('.course-like-rate').text();
-        if ( $(this).hasClass('course-like-voted') == false ) {
-            let c = +a + 1;
-            $(this).find('.course-like-rate').text(c);
-            $(this).addClass('course-like-voted');
-        } else {
-            let c = +a - 1;
-            $(this).find('.course-like-rate').text(c);
-            $(this).removeClass('course-like-voted');
+function handleShowListOfCourses( department, departmentAdmin ) {
+    $.ajax({
+        type: 'POST',
+        url:  './files/plmun.json',
+        data: { 'courses': 10 },
+        dataType: 'json',
+        success: function(response) {
+            response[department][0]['courses'].forEach((value,key) => {
+                $('#course-department').text(value['department']);
+                $('#course-list').append(
+                    `<li class="courses-item">
+                        <div class="courses-description">
+                            <span class="course-name">`+ value['courseName'] + `</span>
+                            <span class="course-department">`+ value['department'] +`</span>
+                            <p>`+ value['description'] +`</p>
+                        </div>
+                        <a class="feedback-results">
+                            <span>Comments and Suggestions (<small class="course-suggestions-rate">`+ value['numbersOfFeedback'] +`</small>)</span>
+                        </a>
+                    </li>`
+                )
+            });
         }
-    });
+    })
+}
 
-    $('.course-dislike').on('click',function(){
-        let a = $(this).find('.course-dislike-rate').text();
-        if ( $(this).hasClass('course-dislike-voted') == 0 ) {
-            let c = +a + 1;
-            $(this).find('.course-dislike-rate').text(c);
-            $(this).addClass('course-dislike-voted')            
+function handleClickMenu() {
+    $('.navigation-item-course, .navigation-link').on('click', function() {
+        let getDataCategory = $(this).data('category');
+        let splitDepartment = getDataCategory.split('-');
+        let getDepartmentAdmin;
+        let getDepartment;
+        $('#course-page').fadeIn();
+        $('#welcome-message').fadeOut();
+        if ( $(this).hasClass('navigation-link')) {
+            getDepartmentAdmin = splitDepartment[1];
         } else {
-            let c = +a - 1;
-            $(this).find('.course-dislike-rate').text(c);
-            $(this).removeClass('course-dislike-voted')
+            getDepartment = splitDepartment[0];
         }
+        $('#course-list').html('');
+        $('#course-department').html('');
+        handleShowListOfCourses( getDepartment, getDepartmentAdmin ); 
     });
-            
 }
