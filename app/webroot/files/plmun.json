@@ -1,0 +1,236 @@
+{
+  "citcs" : [
+    {
+      "courses": [
+        {
+          "courseName": "BS in Computer Engineer",
+          "numbersOfFeedback": 200,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CITCS"
+        },
+        {
+          "courseName": "BS in Information Technology",
+          "numbersOfFeedback": 10,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CITCS"
+        },
+        {
+          "courseName": "BS in Computer Science",
+          "numbersOfFeedback": 340,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CITCS"
+        },
+        {
+          "courseName": "Computer Science",
+          "numbersOfFeedback": 231,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CITCS"
+        },
+        {
+          "courseName": "Computer Technician",
+          "numbersOfFeedback": 123,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CITCS"
+        }
+      ],
+      "dean": [
+        {
+          "facultyName": "Duterte",
+          "department": "CITCS",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "numbersOfFeedback": 123
+        }
+      ],
+      "faculty": [
+        {
+          "facultyName": "Faculty",
+          "department": "CITCS",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "numbersOfFeedback": 123
+        }
+      ]
+    }
+  ],
+  "cas" : [
+    {
+      "courses": [
+        {
+          "courseName": "Computer and Communications Technology",
+          "numbersOfFeedback": 200,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CAS"
+        }
+      ],
+      "dean": [
+        {
+          "facultyName": "Duterte",
+          "department": "CAS",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "numbersOfFeedback": 123
+        }
+      ],
+      "faculty": [
+        {
+          "facultyName": "Faculty",
+          "department": "CAS",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "numbersOfFeedback": 123
+        }
+      ]
+    }
+  ],
+  "cba" : [
+    {
+      "courses": [
+        {
+          "courseName": "BS in Accountancy",
+          "numbersOfFeedback": 200,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CBA"
+        },
+        {
+          "courseName": "BS in Economics",
+          "numbersOfFeedback": 200,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CBA"
+        },
+        {
+          "courseName": "BS in Finance",
+          "numbersOfFeedback": 200,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CBA"
+        },
+        {
+          "courseName": "BS in Information Systems",
+          "numbersOfFeedback": 200,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CBA"
+        },
+        {
+          "courseName": "BS in Marketing",
+          "numbersOfFeedback": 200,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CBA"
+        }
+      ],
+      "dean": [
+        {
+          "facultyName": "Duterte",
+          "department": "CBA",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "numbersOfFeedback": 123
+        }
+      ],
+      "faculty": [
+        {
+          "facultyName": "Faculty",
+          "department": "CBA",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "numbersOfFeedback": 123
+        }
+      ]
+    }
+  ],
+  "cte" : [
+    {
+      "courses": [
+        {
+          "courseName": "BS in Manufacturing & Product Design",
+          "numbersOfFeedback": 200,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CTE"
+        },
+        {
+          "courseName": "BS in Architecture",
+          "numbersOfFeedback": 200,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CTE"
+        },
+        {
+          "courseName": "BS in Engineering",
+          "numbersOfFeedback": 200,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CTE"
+        },
+        {
+          "courseName": "BS in Education",
+          "numbersOfFeedback": 200,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CTE"
+        }
+      ],
+      "dean": [
+        {
+          "facultyName": "Duterte",
+          "department": "CBA",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "numbersOfFeedback": 123
+        }
+      ],
+      "faculty": [
+        {
+          "facultyName": "Faculty",
+          "department": "CBA",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "numbersOfFeedback": 123
+        }
+      ]
+    }
+  ],
+  "ccj" : [
+    {
+      "courses": [
+        {
+          "courseName": "BS in Criminology",
+          "numbersOfFeedback": 200,
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "department": "CCJ"
+        }
+      ],
+      "dean": [
+        {
+          "facultyName": "Duterte",
+          "department": "CCJ",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "numbersOfFeedback": 123
+        }
+      ],
+      "faculty": [
+        {
+          "facultyName": "Faculty",
+          "department": "CCJ",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "numbersOfFeedback": 123
+        }
+      ]
+    }
+  ],
+  "offices" : [
+    {
+      "registrar": [
+        {
+          "facultyName": "Registrar",
+          "department": "OFFICE",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "numbersOfFeedback": 123
+        }
+      ],
+      "treasury": [
+        {
+          "facultyName": "Treasury",
+          "department": "OFFICE",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "numbersOfFeedback": 123
+        }
+      ],
+      "guidance": [
+        {
+          "facultyName": "Guidance",
+          "department": "OFFICE",
+          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non",
+          "numbersOfFeedback": 123
+        }
+      ]
+    }
+  ]
+}
