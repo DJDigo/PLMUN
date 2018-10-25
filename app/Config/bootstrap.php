@@ -106,3 +106,11 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+Configure::write('ratings', [
+	1 => "Fail",
+	2 => "Need Improvement",
+	3 => "Satisfactory",
+	4 => "Very Satisfactory",
+	5 => "Excellent"
+]);
