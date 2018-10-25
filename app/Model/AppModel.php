@@ -30,4 +30,20 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+    var $actsAs = ['Utils.SoftDelete', 'Containable'];
+    public function exists($id = null) {
+        if ($this->Behaviors->loaded('SoftDelete')) {
+            return $this->existsAndNotDeleted($id);
+        } else {
+            return parent::exists($id);
+        }
+
+    }
+    public function delete($id = null, $cascade = true) {
+        $result = parent::delete($id, $cascade);
+        if ($result === false && $this->Behaviors->enabled('Utils.SoftDelete')) {
+            return (bool)$this->field('deleted', array('deleted' => 1));
+        }
+        return $result;
+    }
 }
