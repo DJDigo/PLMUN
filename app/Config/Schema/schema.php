@@ -57,7 +57,7 @@ class AppSchema extends CakeSchema {
         ]
     ];
 
-    public $facuties = [
+    public $faculties = [
         'id' => [
             'type' => 'integer', 
             'null' => false, 
