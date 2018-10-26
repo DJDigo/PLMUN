@@ -198,22 +198,22 @@ header {
     width: 100%;
     display: inline-block;
 }
-.courses {
+.admin {
     min-height: 400px;
 }
-.courses h2 {
+.admin h2 {
     font-size: 18px;
     font-weight: 700;
     padding-bottom: 20px;
     color: #152f49;
 }
-.course-title {
+.admin-title {
     font-size: 18px;
     color: #193654;
     font-weight: bold;
     padding-bottom: 15px;
 }
-.courses-item {
+.admin-item {
     display: inline-block;
     width: 31.3%;
     vertical-align: middle;
@@ -226,32 +226,32 @@ header {
     margin-bottom: 3%;
     background: #fff;
 }
-.courses-item:nth-child(3n) {
+.admin-item:nth-child(3n) {
     margin-right: 0;
 }
-.course-name {
+.admin-name {
     font-weight: bold;
     font-size: 16px;
     color: #3e76b1;
     padding-bottom: 5px;
     display: block;
 }
-.course-department {
+.admin-department {
     font-weight: bold;
     font-size: 14px;
     color: #3e76b1;
     padding-bottom: 5px;
     display: block;
 }
-.courses-description {
+.admin-description {
     font-size: 14px;
 }
-.course-feedback {
+.admin-feedback {
     border: 1px solid #3e76b1;
     border-radius: 3px;
     background: #fff;
 }
-.courses-description p {
+.admin-description p {
     height: 65px;
     overflow-y: hidden;
     text-overflow: ellipsis;

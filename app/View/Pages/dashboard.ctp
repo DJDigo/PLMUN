@@ -9,9 +9,9 @@
     </div>
 </div>
 
-<div class="courses" id="course-page">
-    <h2 id="course-department"></h2>
-    <ul id="course-list">
+<div class="admin" id="admin-page">
+    <h2 id="department-admin"></h2>
+    <ul id="admin-list">
     </ul>
 </div>
 <?php echo $this->element('modal'); ?>

@@ -8,8 +8,8 @@ $(function() {
 function handleFeedbackModal() {
   $('html').delegate('.feedback-results', 'click',function() {
     $('.modal').fadeIn(300);
-    $('.modal-course-title').text($(this).parents('.courses-item').find('.course-name').text());
-    $('.modal-course-department').text($(this).parents('.courses-item').find('.course-department').text());
+    $('.modal-course-title').text($(this).parents('.admin-item').find('.admin-name').text());
+    $('.modal-course-department').text($(this).parents('.admin-item').find('.admin-department').text());
   }); 
 
   $('.close-modal').on('click', function() {
@@ -23,24 +23,24 @@ function handleShowListOfCourses( department, departmentAdmin ) {
   $.ajax({
     type: 'POST',
     url:  './files/plmun.json',
-    data: { 'courses': 10 },
+    data: { 'department': 10 },
     dataType: 'json',
     success: function(response) {
       response[department][0][departmentAdmin].forEach((value,key) => {
         if (departmentAdmin == 'dean') {
-          $('#course-department').text(value['department'] + " Dean " + value['facultyName']);
+          $('#department-admin').text(value['department'] + " Dean " + value['facultyName']);
         } else {
-          $('#course-department').text(value['department'] + " " + value['facultyName']);
+          $('#department-admin').text(value['department'] + " " + value['facultyName']);
         }
-        $('#course-list').append(
-          `<li class="courses-item">
-            <div class="courses-description">
-              <span class="course-name">`+ value['facultyName'] + `</span>
-              <span class="course-department">`+ value['department'] +`</span>
+        $('#admin-list').append(
+          `<li class="admin-item">
+            <div class="admin-description">
+              <span class="admin-name">`+ value['facultyName'] + `</span>
+              <span class="admin-department">`+ value['department'] +`</span>
               <p>`+ value['description'] +`</p>
             </div>
             <a class="feedback-results">
-              <span>Comments and Suggestions (<small class="course-suggestions-rate">`+ value['numbersOfFeedback'] +`</small>)</span>
+              <span>Comments and Suggestions (<small class="admin-suggestions-rate">`+ value['numbersOfFeedback'] +`</small>)</span>
             </a>
         </li>`
         )
@@ -54,12 +54,12 @@ function handleClickMenu() {
   $('.navigation-link').on('click', function() {
     let getDataCategory = $(this).data('category');
     let splitDepartment = getDataCategory.split('-');
-    $('#course-page').fadeIn(300);
+    $('#admin-page').fadeIn(300);
     $('#welcome-message').fadeOut();
     let getDepartmentAdmin = splitDepartment[1];
     let getDepartment = splitDepartment[0];
   
-    $('#course-list, #course-department').html('');
+    $('#admin-list, #department-admin').html('');
     handleShowListOfCourses( getDepartment, getDepartmentAdmin ); 
   });
 }
