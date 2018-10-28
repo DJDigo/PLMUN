@@ -199,6 +199,7 @@ header {
     display: inline-block;
 }
 .admin {
+    display: none;
     min-height: 400px;
 }
 .admin h2 {
@@ -452,45 +453,6 @@ header {
 }
 .modal-feedback-form-item {
     padding-bottom: 5px;
-}
-.dashboard-feedback-department {
-    font-size: 16px;
-    color: #152f49;
-    display: block;
-    padding: 8px;
-    border-bottom: 1px solid #152f49;
-}
-.dashboard-feedback-count {
-    font-size: 20px;
-    font-weight: 700;
-    display: block;
-    text-align: center;
-    padding: 10px;
-}
-.dashboard-feedbacks {
-    display: inline-block;
-    width: 15%;
-    vertical-align: top;
-    margin-right: 2%;
-    border: 1px solid #152f49;
-    box-sizing: border-box;
-    border-radius: 3px;
-    text-align: center;
-    background: #fff;
-}
-.dashboard-feedbacks:last-child {
-    margin-right: 0;
-}
-
-.dashboard-chart {
-    max-width: 400px;
-    margin: 50px auto 20px;
-}
-.dashboard-title {
-    font-size: 20px;
-    display: block;
-    font-weight: bold;
-    padding-bottom: 20px;
 }
 .required {
     font-size: 20px;

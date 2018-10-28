@@ -21,14 +21,13 @@
 	<title>
 		<?php echo 'Pamantasan ng Lungsod ng Muntinlupa'; ?>
 	</title>
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome/css/font-awesome.css"/>
 	<?php
-		echo $this->Html->meta('icon');
 		echo $this->Html->css('style.css');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	<link href="./img/common/favicon.png" type="image/png" rel="icon"/>
 	<script src="./js/jquery-3.1.0.min.js"></script>
 	<script src="./js/common.js"></script>
 </head>
