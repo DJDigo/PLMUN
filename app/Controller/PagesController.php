@@ -75,7 +75,12 @@ class PagesController extends AppController {
 	}
 
 	public function index() { 
+		
+	}
 
+	public function index_admin() { 
+		parent::beforeFilter();
+        $this->layout = 'admin';
 	}
 
 	public function dashboard() { 
