@@ -83,6 +83,11 @@ class PagesController extends AppController {
         $this->layout = 'admin';
 	}
 
+	public function department_admin() { 
+		parent::beforeFilter();
+        $this->layout = 'admin';
+	}
+
 	public function dashboard() { 
 
 	}

@@ -29,8 +29,11 @@
 		echo $this->fetch('script');
     ?>
     <link href="../img/common/favicon.png" type="image/png" rel="icon"/>
+	<?= $this->Html->css('../js/datatables/datatables.min.css') ?>
 	<script src="../js/jquery-3.1.0.min.js"></script>
-	<!-- <script src="/../js/admin.js"></script> -->
+	<?= $this->Html->script('../js/jquery.dataTables.min.js') ?>
+	<?= $this->Html->script('../js/datatables/datatables.min.js') ?>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </head>
 <body>
     <header class="header">
