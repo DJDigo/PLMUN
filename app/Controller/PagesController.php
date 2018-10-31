@@ -73,11 +73,6 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
-
-	public function index() { 
-		
-	}
-
 	public function index_admin() { 
 		parent::beforeFilter();
         $this->layout = 'admin';
@@ -89,6 +84,25 @@ class PagesController extends AppController {
 	}
 
 	public function dashboard() { 
+		if ($this->Session->check('category')) {
+			$category = $this->Session->read('category');
+			$this->set(compact('category'));
+		}
+	}
 
+	public function save_url_session() {
+		$this->autoRender = false; 
+		if ($this->request->is('Ajax')) {
+			$data = $this->request->data;
+			$category = explode('-',$data['category']);
+			$this->Session->write('category', $category);
+		}
+	}
+
+	public function delete_session() {
+		$this->autoRender = false;
+		if ($this->request->is('Ajax')) {
+			$this->Session->destroy();
+		}
 	}
 }

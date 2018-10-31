@@ -29,11 +29,11 @@
                 </div>
             </div>
 
-            <form class="modal-feedback-form">
+            <form class="modal-feedback-form" id="feed_back_form">
                 <ul>
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
-                            <select class="modal-feedback-selectbox">
+                            <select class="modal-feedback-selectbox" name="rating_1">
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -47,7 +47,7 @@
                     </li>
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
-                            <select class="modal-feedback-selectbox">
+                            <select class="modal-feedback-selectbox" name="rating_2">
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -61,7 +61,7 @@
                     </li>
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
-                            <select class="modal-feedback-selectbox">
+                            <select class="modal-feedback-selectbox" name="rating_3">
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -75,7 +75,7 @@
                     </li>
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
-                            <select class="modal-feedback-selectbox">
+                            <select class="modal-feedback-selectbox" name="rating_4">
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -89,7 +89,7 @@
                     </li>
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
-                            <select class="modal-feedback-selectbox">
+                            <select class="modal-feedback-selectbox" name="rating_5">
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -103,7 +103,7 @@
                     </li>
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
-                            <select class="modal-feedback-selectbox">
+                            <select class="modal-feedback-selectbox" name="rating_6">
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -117,7 +117,7 @@
                     </li>
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
-                            <select class="modal-feedback-selectbox">
+                            <select class="modal-feedback-selectbox" name="rating_7">
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -131,7 +131,7 @@
                     </li>
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
-                            <select class="modal-feedback-selectbox">
+                            <select class="modal-feedback-selectbox" name="rating_8">
                                 <option>5</option>
                                 <option>4</option>
                                 <option>3</option>
@@ -148,14 +148,14 @@
 
             <div class="modal-feedback-emai">
                 <label class="modal-feedback-label">Email Address: <span class="required">*</span></label>
-                <input type="email" class="modal-feedback-input" placeholder="Email Address">
+                <input type="email" class="modal-feedback-input" placeholder="Email Address" name="email">
                 <span class="modal-feedback-error">please input you email address</span>
             </div>
 
             <div class="modal-feedback-msg">
                 <textarea class="modal-feedback-textarea" placeholder="write your suggestions/feedback..."></textarea>
                 <span class="modal-feedback-error">please write you feedback/suggestion</span>
-                <button class="button-publish">Publish</button>
+                <button class="button-publish" id="submit">Publish</button>
             </div>
         </div>
     </div>

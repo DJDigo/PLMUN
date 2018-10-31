@@ -22,12 +22,13 @@
 		<?php echo 'Pamantasan ng Lungsod ng Muntinlupa'; ?>
 	</title>
     <?php
-        echo $this->Html->css('./font-awesome-4.7.0/css/font-awesome.min.css');
+        echo $this->Html->css('font-awesome-4.7.0/css/font-awesome.min.css');
 		echo $this->Html->css('admin.css');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
     ?>
+	<!-- <link rel="stylesheet" type="text/css" href="/app/webroot/css/font-awesome-4.7.0/css/font-awesome.min.css"> -->
     <link href="../img/common/favicon.png" type="image/png" rel="icon"/>
 	<?= $this->Html->css('../js/datatables/datatables.min.css') ?>
 	<script src="../js/jquery-3.1.0.min.js"></script>

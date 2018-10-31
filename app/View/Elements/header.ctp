@@ -1,6 +1,6 @@
 <div class="header-content">
     <div class="header-logo">
-        <a href="/PLMUN/">
+        <a href="">
             <img src="./img/common/plmun-logo.png" alt="logo">
         </a>
     </div>

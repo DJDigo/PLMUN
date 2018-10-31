@@ -15,3 +15,39 @@
     </ul>
 </div>
 <?php echo $this->element('modal'); ?>
+<input type="hidden" value="<?php echo !empty($category[0]) ? $category[0] : '' ?>" id="getDepartment">
+<input type="hidden" value="<?php echo !empty($category[1]) ? $category[1] : '' ?>" id="getDepartmentAdmin">
+<script>    
+    $(function() {
+        let getDepartment = $("#getDepartment").val();
+        let getDepartmentAdmin = $("#getDepartmentAdmin").val();
+
+        if (getDepartment != '' && getDepartmentAdmin != '') {
+            $('#admin-page').show();
+            $('#welcome-message').hide();
+            $('#admin-list, #department-admin').html('');
+            handleShowListOfCourses( getDepartment, getDepartmentAdmin );  
+        }
+
+        $('.navigation-link').on('click', function() {
+            $.ajax({
+                type: 'POST',
+                url: 'pages/save_url_session',
+                data: {category: $(this).data('category')},
+                dataType: 'JSON',
+                success: function (res) {
+                }
+            });
+        });
+
+        $('.header-logo').on('click', function () {
+            $.ajax({
+                type: 'POST',
+                url: 'pages/delete_session',
+                success: function (res) {
+                    window.location.reload();
+                }
+            });
+        });
+    });
+</script>
