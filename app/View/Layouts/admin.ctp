@@ -30,7 +30,7 @@
     ?>
     <link href="../img/common/favicon.png" type="image/png" rel="icon"/>
 	<?= $this->Html->css('../js/datatables/datatables.min.css') ?>
-	<script src="../js/jquery-3.1.0.min.js"></script>
+	<?= $this->Html->script('../js/jquery-3.1.0.min.js') ?>
 	<?= $this->Html->script('../js/jquery.dataTables.min.js') ?>
 	<?= $this->Html->script('../js/datatables/datatables.min.js') ?>
 	<?= $this->Html->script('../js/chartjs.js') ?>
