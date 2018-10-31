@@ -29,7 +29,7 @@
                 </div>
             </div>
 
-            <form class="modal-feedback-form" id="feed_back_form">
+            <form class="modal-feedback-form">
                 <ul>
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">

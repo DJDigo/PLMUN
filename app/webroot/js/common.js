@@ -10,6 +10,7 @@ function handleFeedbackModal() {
     $('.modal').fadeIn(300);
     $('.modal-course-title').text($(this).parents('.admin-item').find('.admin-name').text());
     $('.modal-course-department').text($(this).parents('.admin-item').find('.admin-department').text());
+    $('.modal-feedback-form').attr('id',$(this).parents('.admin-item').data('category'));
   }); 
 
   $('.close-modal').on('click', function() {
@@ -33,7 +34,7 @@ function handleShowListOfCourses( department, departmentAdmin ) {
           $('#department-admin').text(value['department'] + " " + value['facultyName']);
         }
         $('#admin-list').append(
-          `<li class="admin-item">
+          `<li class="admin-item" data-category="`+ department + '-' + departmentAdmin +`">
             <div class="admin-description">
               <span class="admin-name">`+ value['facultyName'] + `</span>
               <span class="admin-department">`+ value['department'] +`</span>
