@@ -36,16 +36,20 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </head>
 <body>
-    <header class="header">
-		<?php echo $this->element('admin/header'); ?>
-	</header>
-    <aside class="sidebar">
-        <?php echo $this->element('admin/sidebar'); ?>
-    </aside>
-	<main class="main-content">
-		<div class="content">
-			<?php echo $this->fetch('content'); ?>
-		</div>
-	</main>
+	<?php if ($this->Session->check('Auth.User')) :  ?>
+		<header class="header">
+			<?php echo $this->element('admin/header'); ?>
+		</header>
+		<aside class="sidebar">
+			<?php echo $this->element('admin/sidebar'); ?>
+		</aside>
+		<main class="main-content">
+			<div class="content">
+				<?php echo $this->fetch('content'); ?>
+			</div>
+		</main>
+	<?php else : ?>
+		<?php echo $this->fetch('content'); ?>
+	<?php endif; ?>
 </body>
 </html>
