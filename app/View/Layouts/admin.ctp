@@ -31,22 +31,26 @@
 	<!-- <link rel="stylesheet" type="text/css" href="/app/webroot/css/font-awesome-4.7.0/css/font-awesome.min.css"> -->
     <link href="../img/common/favicon.png" type="image/png" rel="icon"/>
 	<?= $this->Html->css('../js/datatables/datatables.min.css') ?>
-	<script src="../js/jquery-3.1.0.min.js"></script>
+	<?= $this->Html->script('../js/jquery-3.1.0.min.js') ?>
 	<?= $this->Html->script('../js/jquery.dataTables.min.js') ?>
 	<?= $this->Html->script('../js/datatables/datatables.min.js') ?>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<?= $this->Html->script('../js/chartjs.js') ?>
 </head>
 <body>
-    <header class="header">
-		<?php echo $this->element('admin/header'); ?>
-	</header>
-    <aside class="sidebar">
-        <?php echo $this->element('admin/sidebar'); ?>
-    </aside>
-	<main class="main-content">
-		<div class="content">
-			<?php echo $this->fetch('content'); ?>
-		</div>
-	</main>
+	<?php if ($this->Session->check('Auth.User')) :  ?>
+		<header class="header">
+			<?php echo $this->element('admin/header'); ?>
+		</header>
+		<aside class="sidebar">
+			<?php echo $this->element('admin/sidebar'); ?>
+		</aside>
+		<main class="main-content">
+			<div class="content">
+				<?php echo $this->fetch('content'); ?>
+			</div>
+		</main>
+	<?php else : ?>
+		<?php echo $this->fetch('content'); ?>
+	<?php endif; ?>
 </body>
 </html>

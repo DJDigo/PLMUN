@@ -73,8 +73,14 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
+	public function admin_login() { 
+		parent::beforeFilter();
+        $this->layout = 'admin';
+	}
 	public function index_admin() { 
 		parent::beforeFilter();
+		$this->Session->destroy();
+		// $this->Session->write('Auth.User', 'daryll');
         $this->layout = 'admin';
 	}
 
