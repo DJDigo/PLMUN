@@ -330,7 +330,7 @@ table {
 }
 .login-box {
   max-width: 500px;
-  margin: 10% auto; 
+  margin: 8% auto; 
 }
 .login-form {
   box-shadow: 0 0 3px #e5f99a;
@@ -343,4 +343,34 @@ table {
 .form {
   border-top: 2px solid #e5f99a;
   margin-top: 10px;
+}
+.login-label {
+  font-size: 14px;
+  display: block;
+  padding-bottom: 3px;
+  text-align: left
+}
+.login-row {
+  padding: 10px 20px;
+  text-align: center;
+}
+.login-input {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px 5px;
+  width: 100%;
+}
+.login-button {
+  border: 1px solid #4381c1;
+  padding: 10px 50px;
+  box-sizing: border-box;
+  background: #4381c1;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+.login-button:hover {
+  background: #fff;
+  color: #4381c1;
 }
