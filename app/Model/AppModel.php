@@ -30,7 +30,7 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
-    var $actsAs = ['Utils.SoftDelete', 'Containable'];
+    // var $actsAs = ['Utils.SoftDelete', 'Containable'];
     public function exists($id = null) {
         if ($this->Behaviors->loaded('SoftDelete')) {
             return $this->existsAndNotDeleted($id);

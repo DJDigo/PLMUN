@@ -29,7 +29,7 @@
                 </div>
             </div>
 
-            <form class="modal-feedback-form">
+            <form class="modal-feedback-form" autocomplete="off">
                 <ul>
                     <li class="modal-feedback-form-item">
                         <div class="modal-input-wrapper">
@@ -144,19 +144,52 @@
                         </div>
                     </li>
                 </ul>
+                <div class="modal-feedback-emai">
+                    <label class="modal-feedback-label">Email Address: <span class="required">*</span></label>
+                    <input type="email" class="modal-feedback-input" placeholder="Email Address" name="email">
+                    <span class="modal-feedback-error" id="email"></span>
+                </div>
+
+                <div class="modal-feedback-msg">
+                    <textarea class="modal-feedback-textarea" placeholder="write your suggestions/feedback..." name="suggestion"></textarea>
+                    <span class="modal-feedback-error"></span>
+                    <button class="button-publish" id="submit">Publish</button>
+                </div>
             </form>
 
-            <div class="modal-feedback-emai">
-                <label class="modal-feedback-label">Email Address: <span class="required">*</span></label>
-                <input type="email" class="modal-feedback-input" placeholder="Email Address" name="email">
-                <span class="modal-feedback-error">please input you email address</span>
-            </div>
-
-            <div class="modal-feedback-msg">
-                <textarea class="modal-feedback-textarea" placeholder="write your suggestions/feedback..."></textarea>
-                <span class="modal-feedback-error">please write you feedback/suggestion</span>
-                <button class="button-publish" id="submit">Publish</button>
-            </div>
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(function() {
+        $('#submit').on('click', function(e) {
+            e.preventDefault();
+            let categories = $('form').attr('id');
+            let serialize_data = $('form').serializeArray();
+            let split_categories = categories.split('-');
+            let department_name = split_categories[0];
+            let url = "";
+            
+            if (split_categories[1] === "faculty") {
+                url = "faculty_feedbacks/add"
+            }
+            if (split_categories[1] === "dean") {
+                url = "dean_feedbacks/add"
+            }
+            $.ajax({
+                type: 'POST',
+                dataType: 'JSON',
+                url: url,
+                data: {serialize_data, 'department_name': department_name},
+                success : function (res) {
+                    if (res['error'] != '') {
+                        $('span#email').text(res['error']);
+                    } 
+                    if (res['success']) {
+                        window.location.reload();
+                    }
+                }
+            });
+        });
+    });
+</script>

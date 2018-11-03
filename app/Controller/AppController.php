@@ -33,8 +33,11 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
     public $components = [
         'Session',
-        'DebugKit.Toolbar'
+        'DebugKit.Toolbar',
+        'FeedbackCommon',
+        'Flash'
     ];
+
 
     public $helpers = ['Html', 'Form', 'Session'];
 }

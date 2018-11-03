@@ -1,4 +1,5 @@
 <div class="top-message" id="welcome-message">
+<?php echo $this->Session->flash();?>
     <span>Welcome to</span>
     <span>Pamantasan Ng Lungsod ng Muntinlupa</span>
     <span>Feedback Portal</span>

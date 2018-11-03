@@ -201,7 +201,7 @@ class AppSchema extends CakeSchema {
             'unsigned' => false, 
             'key' => 'primary'
         ],
-        'faculty_id' => [
+        'department_id' => [
             'type' => 'integer', 
             'null' => false, 
             'default' => null, 
@@ -216,6 +216,15 @@ class AppSchema extends CakeSchema {
             'charset' => 'utf8',
             'comment' => 'Email of user', 
             'length' => 1000
+        ],
+        'suggestion' => [
+            'type' => 'string', 
+            'null' => false, 
+            'default' => null, 
+            'collate' => 'utf8_general_ci', 
+            'charset' => 'utf8',
+            'comment' => 'Suggestions', 
+            'length' => 1000 
         ],
         'rating_1' => [
             'type' => 'integer', 
@@ -295,8 +304,8 @@ class AppSchema extends CakeSchema {
                 'column' => 'id', 
                 'unique' => 1
             ],
-            'faculty_id' => [
-                'column' => 'faculty_id'
+            'department_id' => [
+                'column' => 'department_id'
             ]
         ]
     ];
@@ -309,7 +318,7 @@ class AppSchema extends CakeSchema {
             'unsigned' => false, 
             'key' => 'primary'
         ],
-        'dean_id' => [
+        'department_id' => [
             'type' => 'integer', 
             'null' => false, 
             'default' => null, 
@@ -324,6 +333,15 @@ class AppSchema extends CakeSchema {
             'charset' => 'utf8',
             'comment' => 'Email of user', 
             'length' => 1000
+        ],
+        'suggestion' => [
+            'type' => 'string', 
+            'null' => false, 
+            'default' => null, 
+            'collate' => 'utf8_general_ci', 
+            'charset' => 'utf8',
+            'comment' => 'Suggestions', 
+            'length' => 1000 
         ],
         'rating_1' => [
             'type' => 'integer', 
@@ -403,8 +421,8 @@ class AppSchema extends CakeSchema {
                 'column' => 'id', 
                 'unique' => 1
             ],
-            'dean_id' => [
-                'column' => 'dean_id'
+            'department_id' => [
+                'column' => 'department_id'
             ]
         ]
     ];
