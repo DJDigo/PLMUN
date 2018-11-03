@@ -468,3 +468,12 @@ header {
     padding: 3px 0;
     display: block;
 }
+.flash-success {
+    font-size: 18px;
+    background: #0cc30c;
+    display: block;
+    color: #fff;
+    padding: 10px 30px;
+    text-align: left;
+    border-radius: 5px;
+}

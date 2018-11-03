@@ -15,6 +15,10 @@ function handleFeedbackModal() {
 
   $('.close-modal').on('click', function() {
     $('.modal').fadeOut(300);
+    $('.modal-course-title, .modal-course-department').text('');
+    $('.modal-feedback-form').attr('id','');
+    $('.modal-feedback-input, .modal-feedback-textarea').val('');
+    $('.modal-feedback-selectbox').val(5)
   })
 }
 
