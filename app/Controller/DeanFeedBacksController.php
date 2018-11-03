@@ -9,25 +9,25 @@ class DeanFeedbacksController extends AppController {
             $data      = $this->request->data;
             $save_data = $this->FeedbackCommon->get_department($data['department_name'], $data['serialize_data']);
             $response  = "";
-
-            if (empty($this->__email_validations($save_data['DeanFeedback']['email']))) {
+            if (empty($this->__email_validations($save_data['DeanFeedback']['email'], $save_data['DeanFeedback']['department_id']))) {
+                $this->DeanFeedback->clear();
                 if ($this->DeanFeedback->save($save_data)) {
                     $this->Flash->success(__("Feedback has been successfully submit."));
                     $this->Session->delete('category');
                     $response = ['success' => 'success'];
                 }
             } else {
-                $error = $this->__email_validations($save_data['DeanFeedback']['email']);
+                $error = $this->__email_validations($save_data['DeanFeedback']['email'], $save_data['DeanFeedback']['department_id']);
                 $response = ['error' => $error];
             }
             return json_encode($response);
         }
     }
 
-    private function __email_validations($email) {
+    private function __email_validations($email, $department_id) {
         $error_message = "";
         if (!empty($email)) {
-            $check_email_exist = $this->DeanFeedback->findByEmail($email);
+            $check_email_exist = $this->DeanFeedback->findByEmailAndDepartmentId($email,$department_id);
             if ($check_email_exist) {
                 $error_message = "Email is already exists.";
             } else { 

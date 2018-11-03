@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 28, 2018 at 09:48 PM
+-- Generation Time: Nov 03, 2018 at 01:22 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -45,8 +45,9 @@ CREATE TABLE `deans` (
 
 CREATE TABLE `dean_feedbacks` (
   `id` int(11) NOT NULL,
-  `dean_id` int(11) NOT NULL COMMENT 'Foreign Key',
+  `department_id` int(11) NOT NULL COMMENT 'Foreign Key',
   `email` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Email of user',
+  `suggestion` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Suggestions',
   `rating_1` int(11) NOT NULL,
   `rating_2` int(11) NOT NULL,
   `rating_3` int(11) NOT NULL,
@@ -60,6 +61,15 @@ CREATE TABLE `dean_feedbacks` (
   `deleted` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0: not deleted 1: deleted',
   `deleted_date` datetime DEFAULT NULL COMMENT 'Deleted date'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `dean_feedbacks`
+--
+
+INSERT INTO `dean_feedbacks` (`id`, `department_id`, `email`, `suggestion`, `rating_1`, `rating_2`, `rating_3`, `rating_4`, `rating_5`, `rating_6`, `rating_7`, `rating_8`, `created`, `modified`, `deleted`, `deleted_date`) VALUES
+(10, 1, 'obamenandro@gmail.com', 'asdasdasdasdsad', 5, 5, 5, 5, 5, 5, 5, 5, '2018-11-03 13:17:03', '2018-11-03 13:17:03', 0, NULL),
+(11, 2, 'aaaaaaaaaaaa@gmail.com', 'asdasdasd', 5, 5, 5, 5, 5, 5, 5, 5, '2018-11-03 13:20:06', '2018-11-03 13:20:06', 0, NULL),
+(12, 5, 'obamenandrsso@gmail.com', 'aaaaaaaaaa', 5, 5, 5, 5, 5, 5, 5, 5, '2018-11-03 13:20:38', '2018-11-03 13:20:38', 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -75,6 +85,17 @@ CREATE TABLE `departments` (
   `deleted` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0: not deleted 1: deleted',
   `deleted_date` datetime DEFAULT NULL COMMENT 'Deleted date'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `departments`
+--
+
+INSERT INTO `departments` (`id`, `name`, `created`, `modified`, `deleted`, `deleted_date`) VALUES
+(1, 'citcs', NULL, NULL, 0, NULL),
+(2, 'cas', NULL, NULL, 0, NULL),
+(3, 'cba', NULL, NULL, 0, NULL),
+(4, 'cte', NULL, NULL, 0, NULL),
+(5, 'ccj', NULL, NULL, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -101,8 +122,9 @@ CREATE TABLE `faculties` (
 
 CREATE TABLE `faculty_feedbacks` (
   `id` int(11) NOT NULL,
-  `faculty_id` int(11) NOT NULL COMMENT 'Foreign Key',
+  `department_id` int(11) NOT NULL COMMENT 'Foreign Key',
   `email` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Email of user',
+  `suggestion` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Suggestions',
   `rating_1` int(11) NOT NULL,
   `rating_2` int(11) NOT NULL,
   `rating_3` int(11) NOT NULL,
@@ -133,7 +155,7 @@ ALTER TABLE `deans`
 --
 ALTER TABLE `dean_feedbacks`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `dean_id` (`dean_id`);
+  ADD KEY `department_id` (`department_id`);
 
 --
 -- Indexes for table `departments`
@@ -153,7 +175,7 @@ ALTER TABLE `faculties`
 --
 ALTER TABLE `faculty_feedbacks`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `faculty_id` (`faculty_id`);
+  ADD KEY `department_id` (`department_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -168,12 +190,12 @@ ALTER TABLE `deans`
 -- AUTO_INCREMENT for table `dean_feedbacks`
 --
 ALTER TABLE `dean_feedbacks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `departments`
 --
 ALTER TABLE `departments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `faculties`
 --
