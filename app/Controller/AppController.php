@@ -35,9 +35,24 @@ class AppController extends Controller {
         'Session',
         'DebugKit.Toolbar',
         'FeedbackCommon',
-        'Flash'
+        'Flash',
+        'Auth' => [
+	    	'authenticate' => [
+	    		'Form' => [
+	    			'fields' => [
+	    				'username' => 'username',
+	    				'password' => 'password'
+	    			],
+                    'passwordHasher' => 'Blowfish'
+	    		]
+	    	]
+	    ]
     ];
 
 
     public $helpers = ['Html', 'Form', 'Session'];
+
+    public function beforeFilter()  {
+    	$this->Auth->allow('add', 'login', 'dashboard', 'register');
+    }
 }

@@ -6,12 +6,18 @@
       </h1>
     </div>
     <div class="header__control">
-      <a href="/admin/users/home" class="header__control-link">
-        <span>Hi! Pogi</span>
-      </a>
-      <a href="/admin/users/logout" class="header__control-link">
-        <span>Logout</span>
-      </a>
+      <?php 
+        echo $this->Html->link($this->Html->tag('span',__('Welcome Admin!')),
+          ['controller' => 'superadmin', 'action' => '/index'], 
+          ['class' => 'header__control-link','escape' => false]
+        ); 
+      ?>
+      <?php 
+        echo $this->Html->link($this->Html->tag('span',__('Logout')),
+          ['controller' => 'superadmin', 'action' => 'logout'], 
+          ['class' => 'header__control-link','escape' => false]
+        ); 
+      ?>
     </div>
   </div>
 </header>
