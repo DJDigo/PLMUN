@@ -2,7 +2,7 @@
   <nav class="sidebar__menu">
     <ul>
       <li class="sidebar__list">
-        <a href="../pages/index_admin" class="sidebar__item sidebar__item--active">
+        <a href="../superadmin/index" class="sidebar__item sidebar__item--active">
           <i class="fa fa-home sidebar__icon" aria-hidden="true"></i>
           <span class="sidebar__link-text">Dashboard</span>
           <i class="fa fa-chevron-right sidebar__icon-right" aria-hidden="true"></i>
@@ -16,13 +16,13 @@
         </a>
         <ul class="sidebar__sub-list">
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_dean" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">Dean <small>6</small></span>
             </a>
           </li>
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_staff" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">Faculty<small>6</small></span>
             </a>
@@ -37,15 +37,15 @@
         </a>
         <ul class="sidebar__sub-list">
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_dean" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
-              <span class="sidebar__text">Dean <small>12</small></span>
+              <span class="sidebar__text">Dean <small>6</small></span>
             </a>
           </li>
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_staff" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
-              <span class="sidebar__text">Faculty</span>
+              <span class="sidebar__text">Faculty<small>6</small></span>
             </a>
           </li>
         </ul>
@@ -58,15 +58,15 @@
         </a>
         <ul class="sidebar__sub-list">
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_dean" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
-              <span class="sidebar__text">Dean <small>12</small></span>
+              <span class="sidebar__text">Dean</span>
             </a>
           </li>
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_staff" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
-              <span class="sidebar__text">Faculty</span>
+              <span class="sidebar__text">Facult</span>
             </a>
           </li>
         </ul>
@@ -79,15 +79,15 @@
         </a>
         <ul class="sidebar__sub-list">
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_dean" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">Dean</span>
             </a>
           </li>
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_staff" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
-              <span class="sidebar__text">Faculty</span>
+              <span class="sidebar__text">Facult</span>
             </a>
           </li>
         </ul>
@@ -100,15 +100,15 @@
         </a>
         <ul class="sidebar__sub-list">
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_dean" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">Dean</span>
             </a>
           </li>
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_staff" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
-              <span class="sidebar__text">Faculty</span>
+              <span class="sidebar__text">Facult</span>
             </a>
           </li>
         </ul>
@@ -121,25 +121,25 @@
         </a>
         <ul class="sidebar__sub-list">
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_staff" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">Registrar</span>
             </a>
           </li>
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_staff" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">Treasury</span>
             </a>
           </li>
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_staff" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">Guidance</span>
             </a>
           </li>
           <li class="sidebar__item-list">
-            <a href="#" class="sidebar__item">
+            <a href="../superadmin/edit_staff" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">NSTP</span>
             </a>

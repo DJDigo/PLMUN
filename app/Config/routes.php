@@ -37,6 +37,14 @@ Router::connect(
     ['controller' => 'Users', 'action' => 'logout']
 );
 Router::connect(
+    '/superadmin/edit_dean',
+    ['controller' => 'Users', 'action' => 'edit_dean']
+);
+Router::connect(
+    '/superadmin/edit_staff',
+    ['controller' => 'Users', 'action' => 'edit_staff']
+);
+Router::connect(
 	'/', 
 	['controller' => 'pages', 'action' => 'dashboard']
 );

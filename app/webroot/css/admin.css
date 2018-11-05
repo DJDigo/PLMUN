@@ -374,3 +374,52 @@ table {
   background: #fff;
   color: #4381c1;
 }
+.form-content {
+  display: block;
+  padding: 20px 0;
+}
+.form-list {
+  padding: 10px 150px;
+}
+.form-label {
+  font-size: 14px;
+  display: block;
+  padding: 0 0 10px;
+}
+.form-input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #ffffe1;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  margin-bottom: 5px;
+}
+.form-textarea {
+  height: 250px;
+  resize: none;
+}
+.form-error {
+  font-size: 12px;
+  color: #f00;
+  display: block;
+}
+.form-list-button {
+  padding: 10px 150px;
+  text-align: center;
+}
+.form-button {
+  border: 1px solid #4381c1;
+  padding: 10px 50px;
+  box-sizing: border-box;
+  background: #4381c1;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+}
+.form-button:hover {
+  background: #fff;
+  color: #4381c1;
+}
