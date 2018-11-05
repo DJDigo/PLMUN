@@ -114,6 +114,7 @@ header {
     position: absolute;
     background: #152f49;
     visibility: hidden;
+    z-index: 2;
 }
 .navigation-link {
     width: 100%;
@@ -278,19 +279,8 @@ header {
     color: #fff;
     transition: 0.3s;
 }
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgb(0,0,0,0.8);
-    font-size: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-.modal-container {
-    margin: 5% auto;
+.admin-container {
+    margin: 2% auto;
     width: 1150px;
     box-shadow: 0px 0px 15px #FFF;
     border: 1px solid #000;
@@ -300,20 +290,20 @@ header {
     box-sizing: border-box;
     position: relative;
 }
-.modal-course-title {
+.admin-course-title {
     font-size: 18px;
     font-weight: bold;
     color: #152f49;
     display: block;
 }
-.modal-course-department {
+.admin-course-department {
     font-size: 16px;
     font-weight: bold;
     color: #3e76b1;
     display: block;
     padding-bottom: 20px;
 }
-.modal-course-description {
+.admin-course-description {
     width: 55%;
     display: inline-block;
     margin-right: 5%;
@@ -321,13 +311,13 @@ header {
     padding: 20px;
     box-sizing: border-box;
 }
-.modal-course-description p {
+.admin-course-description p {
     color: #152f49;
     font-size: 16px;
     display: block;
     padding-bottom: 10px;
 }
-.modal-course-feedback {
+.admin-course-feedback {
     width: 40%;
     display: inline-block;
     vertical-align: top;
@@ -335,14 +325,12 @@ header {
     box-sizing: border-box;
     border-left: 1px solid #313131;
     background: #fff;
-    max-height: 500px;
-    overflow-y: auto;
 }
-.modal-user-feedback ul {
+.admin-user-feedback ul {
     height: 230px;
     overflow-y: auto;
 }
-.modal-feedback-textarea {
+.admin-feedback-textarea {
     background: #fff;
     border: 1px solid #3e76b1;
     resize: none;
@@ -353,10 +341,10 @@ header {
     margin-top: 15px;
     height: 100px;
 }
-.modal-feedback-label {
+.admin-feedback-label {
     font-size: 14px;
 }
-.modal-feedback-input {
+.admin-feedback-input {
     background: #fff;
     border: 1px solid #3e76b1;
     resize: none;
@@ -365,7 +353,7 @@ header {
     box-sizing: border-box;
     padding: 8px;
 }
-.modal-button-wrapper {
+.admin-button-wrapper {
     padding: 20px 20px 0;
     box-sizing: border-box;
     text-align: center;
@@ -380,7 +368,7 @@ header {
     margin-top: 7px;
     cursor: pointer;
 }
-.modal-feedback-item {
+.admin-feedback-item {
     font-size: 14px;
     border-bottom: 1px dashed #050b11;
     padding: 5px 0;
@@ -388,14 +376,14 @@ header {
     padding: 5px 10px;
     border-radius: 5px;
 }
-.modal-feedback-item span {
+.admin-feedback-item span {
     font-weight: bold;
     color: #152f49;
 }
-.modal-feedback-item p {
+.admin-feedback-item p {
     padding: 5px 0;
 }
-.modal-user-feedback {
+.admin-user-feedback {
     padding: 10px 5px;
     
 }
@@ -410,28 +398,28 @@ header {
     font-weight: bold;
     cursor: pointer;
 }
-.modal-feedback-title {
+.admin-feedback-title {
     font-size: 16px;
     font-weight: 600;
 }
-.modal-feedback-note {
+.admin-feedback-note {
     display: block;
     font-size: 14px;
     font-weight: initial;
 }
-.modal-feeback-guidelines {
+.admin-feeback-guidelines {
     border: 1px solid #152f49;
     border-radius: 3px;
     padding: 10px;
     margin: 10px;
 }
-.modal-guidelines-list {
+.admin-guidelines-list {
     display: inline-block;
     width: 45%;
     vertical-align: top;
     font-size: 14px;
 }
-.modal-feedback-selectbox {
+.admin-feedback-selectbox {
     background: #fff;
     border: 1px solid #3e76b1;
     resize: none;
@@ -440,7 +428,7 @@ header {
     box-sizing: border-box;
     padding: 6px;   
 }
-.modal-feedback-label-rate {
+.admin-feedback-label-rate {
     font-size: 14px;
     display: inline-block;
     width: 80%;
@@ -448,10 +436,10 @@ header {
     box-sizing: border-box;
     vertical-align: top;
 }
-.modal-feedback-form {
+.admin-feedback-form {
     padding: 0 10px 10px;
 }
-.modal-feedback-form-item {
+.admin-feedback-form-item {
     padding-bottom: 5px;
 }
 .required {
@@ -462,7 +450,7 @@ header {
     padding: 7px 0;
     vertical-align: middle;
 }
-.modal-feedback-error {
+.admin-feedback-error {
     font-size: 14px;
     color: #ff0000;
     padding: 3px 0;
