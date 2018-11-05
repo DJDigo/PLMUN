@@ -22,19 +22,18 @@
 		<?php echo 'Pamantasan ng Lungsod ng Muntinlupa'; ?>
 	</title>
     <?php
-        echo $this->Html->css('font-awesome-4.7.0/css/font-awesome.min.css');
 		echo $this->Html->css('admin.css');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
     ?>
-	<!-- <link rel="stylesheet" type="text/css" href="/app/webroot/css/font-awesome-4.7.0/css/font-awesome.min.css"> -->
     <link href="../img/common/favicon.png" type="image/png" rel="icon"/>
 	<?= $this->Html->css('../js/datatables/datatables.min.css') ?>
 	<?= $this->Html->script('../js/jquery-3.1.0.min.js') ?>
 	<?= $this->Html->script('../js/jquery.dataTables.min.js') ?>
 	<?= $this->Html->script('../js/datatables/datatables.min.js') ?>
 	<?= $this->Html->script('../js/chartjs.js') ?>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 <body>
 	<?php if ($this->Session->check('Auth.User')) :  ?>
