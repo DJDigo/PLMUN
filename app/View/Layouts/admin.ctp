@@ -32,7 +32,8 @@
 	<?= $this->Html->script('../js/jquery-3.1.0.min.js') ?>
 	<?= $this->Html->script('../js/jquery.dataTables.min.js') ?>
 	<?= $this->Html->script('../js/datatables/datatables.min.js') ?>
-	<?= $this->Html->script('../js/chartjs.js') ?>
+	<?= $this->Html->script('/js/chartjs.js') ?>
+	<?= $this->Html->script('/js/chartjs-plugin-labels.min.js') ?>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 <body>
