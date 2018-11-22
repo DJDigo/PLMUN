@@ -154,7 +154,7 @@
           <div class="admin-feedback-msg">
             <textarea class="admin-feedback-textarea" placeholder="write your suggestions/feedback..." name="suggestion"></textarea>
             <span class="admin-feedback-error"></span>
-            <button class="button-publish" id="submit">Publish</button>
+            <button class="button-publish" id="submit">Submit</button>
           </div>
       </form>
     </div>
