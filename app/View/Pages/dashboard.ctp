@@ -5,8 +5,7 @@
     <span>Feedback Portal</span>
 
     <div class="top-message-description">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero esse quaerat optio veniam, consequuntur fugit amet explicabo ea officia molestiae? Vitae perspiciatis, reiciendis adipisci repudiandae non saepe modi repellat est?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero esse quaerat optio veniam, consequuntur fugit amet explicabo ea officia molestiae? Vitae perspiciatis, reiciendis adipisci repudiandae non saepe modi repellat est?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero esse quaerat optio veniam, consequuntur fugit amet explicabo ea officia molestiae? Vitae perspiciatis, reiciendis adipisci repudiandae non saepe modi repellat est?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero esse quaerat optio veniam, consequuntur fugit amet explicabo ea officia molestiae? Vitae perspiciatis, reiciendis adipisci repudiandae non saepe modi repellat est?</p>
+        <p>College is a great experience and exposes you to a lot of things you might no otherwise learn or experience. You learn to evaluate things, think for yourself, and become a more indenpendent person.Even if you decide not to use your specific degree, college can never be a waste of money if you get something important out of it. You degree is like money in the bank; it opens up a lot of opportunities for you.</p>
     </div>
 </div>
 
