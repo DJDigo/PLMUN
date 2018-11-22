@@ -51,4 +51,12 @@ class UsersController extends AppController {
             return $this->redirect('/superadmin/login');
         }
     }
+
+    public function edit_dean() {
+    
+    }
+
+    public function edit_staff() {
+        
+        }
 }
