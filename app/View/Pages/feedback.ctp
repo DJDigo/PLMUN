@@ -1,5 +1,5 @@
 <div class="feedback">
-    <div class="admin" id="admin-page">
+    <div class="admin" id="admin-page" data-aos="fade-up" data-aos-duration="2000">
         <div class="admin-container">
             <div class="admin-course-description">
                 <span class="admin-course-title"> DUTERTE </span>
@@ -154,3 +154,9 @@
 <div>
 <input type="hidden" value="<?php echo !empty($category[0]) ? $category[0] : '' ?>" id="getDepartment">
 <input type="hidden" value="<?php echo !empty($category[1]) ? $category[1] : '' ?>" id="getDepartmentAdmin">
+
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine'
+    });
+</script>
