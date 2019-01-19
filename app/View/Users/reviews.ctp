@@ -66,13 +66,24 @@
     .dataTables_length select {
         padding: 8px 4px;
         width: 80px;
+        border-radius: 5px;
+    }
+    .dataTables_filter {
+        font-size: 14px;
+        padding: 20px 0 0;
+    }
+    .dataTables_filter input {
+        font-size: 14px;
+        padding: 8px 4px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
     }
 </style>
 
 <script>
   $('#dataTable').dataTable({
     info:     false,
-    searching: false,
+    searching: true,
     ordering: false,
     bLengthChange: true,
   });
