@@ -6,7 +6,7 @@
     </div>
 </div>
 
-<script>    
+<script>
     var typed = new Typed('.welcome-type', {
         strings: ["FEEDBACK PORTAL", "IT'S NICE TO MEET YOU."],
         typeSpeed: 100,

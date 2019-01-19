@@ -501,3 +501,60 @@ main {
     font-weight: bold;
     color: #fff;
 }
+
+
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 15px;
+    }
+    header img {
+        width: 180px;
+    }
+    nav ul {
+        display: none;
+    }
+    .welcome-text {
+        font-size: 30px;
+        line-height: 1.5em;
+        padding-bottom: 5px;
+    }
+    .welcome-type {
+        font-size: 28px;
+    }
+    .welcome-message-button a {
+        font-size: 16px;
+        width: 50%;
+    }
+    .welcome-message {
+        height: 365px;
+        padding: 40px 0 0;
+    }
+    footer {
+        font-size: 14px;
+        text-align: center;
+    }
+    .about-us {
+        padding: 0 5px;
+    }
+    .statement-content {
+        padding: 20px 0;
+    }
+    .statement-content div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .admin-container {
+        width: 100%;
+    }
+    .admin-course-description {
+        width: 100%;
+        min-height: 200px;
+    }
+    .admin-course-feedback {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .admin-guidelines-list {
+        width: 100%;
+    }
+}

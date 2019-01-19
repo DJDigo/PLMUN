@@ -84,6 +84,7 @@
         </h1>
     </a>
     <nav>
+        <span>dsa</span>
         <ul>
             <li class="nav-item">
                 <span class="nav-item-text">CITCS</span>
@@ -140,16 +141,18 @@
 </header>
 
 <script>
-    $('.nav-item-text').on('mouseover', function() {
-        $('.nav-tooltip, .arrow').fadeOut(300);
-        $(this).parent().find('.nav-tooltip').fadeIn(300);
-        $(this).parent().find('.arrow').fadeIn(300);
-    });
-
-    $(document).mouseup(function(e) {
-        var container = $(".nav-tooltip");
-        if (!container.is(e.target) && container.has(e.target).length === 0) {
+    if ( $(window).width() > 767 ) {
+        $('.nav-item-text').on('mouseover', function() {
             $('.nav-tooltip, .arrow').fadeOut(300);
-        }
-    });
+            $(this).parent().find('.nav-tooltip').fadeIn(300);
+            $(this).parent().find('.arrow').fadeIn(300);
+        });
+
+        $(document).mouseup(function(e) {
+            var container = $(".nav-tooltip");
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                $('.nav-tooltip, .arrow').fadeOut(300);
+            }
+        });
+    }
 </script>
