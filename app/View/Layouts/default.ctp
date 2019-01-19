@@ -22,29 +22,26 @@
 		<?php echo 'Pamantasan ng Lungsod ng Muntinlupa'; ?>
 	</title>
 	<?php
-		echo $this->Html->css('style.css');
+		echo $this->Html->css('new_style.css');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
 	<link href="./img/common/favicon.png" type="image/png" rel="icon"/>
 	<script src="./js/jquery-3.1.0.min.js"></script>
+	<script src="./js/typed.min.js"></script>
 	<script src="./js/common.js"></script>
 </head>
 <body>
-	<header class="header">
-		<?php echo $this->element('header'); ?>
-	</header>
+	<?php echo $this->element('header'); ?>
+
 	<main class="main-content">
-		<div class="content">
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div class="statement">
-			<?php echo $this->element('statement'); ?>
-		</div>
+		<?php echo $this->fetch('content'); ?>
+		<!-- <div class="statement">
+			<?php //echo $this->element('statement'); ?>
+		</div> -->
 	</main>
-	<footer class="footer">
-		<?php echo $this->element('footer'); ?>
-	</footer>
+
+	<?php echo $this->element('footer'); ?>
 </body>
 </html>
