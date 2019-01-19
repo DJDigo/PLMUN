@@ -43,13 +43,13 @@
         color: #fff;
     }
     #dataTable th {
-        font-size: 14px;
+        font-size: 12px;
     }    
     #dataTable td {
-        font-size: 14px;
+        font-size: 12px;
         padding: 20px 10px 0;
     }
-    #dataTable td:nth-child(4) {
+    #dataTable td:nth-child(3) {
         width: 300px;
         overflow: hidden;
         text-overflow: ellipsis;
