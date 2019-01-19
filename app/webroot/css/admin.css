@@ -215,8 +215,24 @@ a {
   margin-right: 2%;
   background: #fdffe5;
 }
+.department-list:first-child {
+  border-color: rgb(0, 163, 51);
+}
+.department-list:nth-child(2) {
+  border-color: rgb(255, 0, 0);
+}
+.department-list:nth-child(3) {
+  border-color: rgb(54, 162, 235);
+}
+.department-list:nth-child(4) {
+  border-color: rgb(255, 255, 1);
+}
+.department-list:nth-child(4) {
+  border-color: rgb(238, 130, 238);
+}
 .department-list:last-child {
   margin-right: 0;
+  border-color: rgb(255, 165, 1);
 }
 .department-title {
   display: block;
@@ -422,4 +438,10 @@ table {
 .form-button:hover {
   background: #fff;
   color: #4381c1;
+}
+.chartjs-render-monitor {
+  display: block;
+  width: 700px !important;
+  height: 350px !important;
+  margin: 0 auto;
 }
