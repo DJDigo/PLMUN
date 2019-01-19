@@ -1,4 +1,4 @@
-<div class="header-content">
+<!-- <div class="header-content">
     <div class="header-logo">
         <a href="">
             <img src="./img/common/plmun-logo.png" alt="logo">
@@ -74,4 +74,65 @@
             </div>
         </li>
     </ul>
-</nav>
+</nav> -->
+
+<!-- NEW HEADER -->
+<header>
+    <a href="../PLMUN" class="logo">
+        <h1>
+            <img src="./img/common/plmun-logo.png">
+        </h1>
+    </a>
+    <nav>
+        <ul>
+            <li class="nav-item">
+                <span class="nav-item-text">CITCS</span>
+                <span class="arrow"></span>
+                <div class="nav-tooltip">
+                    <a href="../PLMUN/feedback"> DEAN </a>
+                    <a href="../PLMUN/feedback"> FACULTY </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <span class="nav-item-text">CAS</span>
+                <span class="arrow"></span>
+                <div class="nav-tooltip">
+                    <a href="../PLMUN/feedback"> DEAN </a>
+                    <a href="../PLMUN/feedback"> FACULTY </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <span class="nav-item-text">CBA</span>
+                <span class="arrow"></span>
+                <div class="nav-tooltip">
+                    <a href="../PLMUN/feedback"> DEAN </a>
+                    <a href="../PLMUN/feedback"> FACULTY </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <span class="nav-item-text">CTE</span>
+                <span class="arrow"></span>
+                <div class="nav-tooltip">
+                    <a href="../PLMUN/feedback"> DEAN </a>
+                    <a href="../PLMUN/feedback"> FACULTY </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <span class="nav-item-text">CCJ</span>
+                <span class="arrow"></span>
+                <div class="nav-tooltip">
+                    <a href="../PLMUN/feedback"> DEAN </a>
+                    <a href="../PLMUN/feedback"> FACULTY </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <span class="nav-item-text">OFFICES</span>
+                <span class="arrow"></span>
+                <div class="nav-tooltip">
+                    <a href="../PLMUN/feedback"> DEAN </a>
+                    <a href="../PLMUN/feedback"> FACULTY </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
