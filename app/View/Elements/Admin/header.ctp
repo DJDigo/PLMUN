@@ -2,7 +2,7 @@
   <div class="header__content">
     <div class="header__company-name">
       <h1>
-          <img src="../img/common/plmun-logo.png" alt="plmun logo">
+          <img src="../../img/common/plmun-logo.png" alt="plmun logo">
       </h1>
     </div>
     <div class="header__control">

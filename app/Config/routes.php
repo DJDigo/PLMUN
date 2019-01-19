@@ -60,6 +60,22 @@ Router::connect(
 	'/', 
 	['controller' => 'pages', 'action' => 'dashboard']
 );
+
+//CITCS
+Router::connect(
+    '/superadmin/departments/citcs',
+    ['controller' => 'departments', 'action' => 'citcs']
+);
+Router::connect(
+    '/superadmin/dean/:id',
+    ['controller' => 'departments', 'action' => 'dean_edit'],
+    ['pass' => ['id']]
+);
+Router::connect(
+    '/superadmin/faculty/:id',
+    ['controller' => 'departments', 'action' => 'faculty_edit'],
+    ['pass' => ['id']]
+);
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

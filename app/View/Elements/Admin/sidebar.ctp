@@ -16,37 +16,37 @@
         </a>
         <ul class="sidebar__sub-list">
           <li class="sidebar__item-list">
-            <a href="../superadmin/view_department" class="sidebar__item">
+            <a href="<?php echo $url.'/departments/citcs' ?>" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">CITCS</span>
             </a>
           </li>
           <li class="sidebar__item-list">
-            <a href="../superadmin/view_department" class="sidebar__item">
+            <a href="<?php echo $url.'/departments/cas' ?>" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">CAS</span>
             </a>
           </li>
           <li class="sidebar__item-list">
-            <a href="../superadmin/view_department" class="sidebar__item">
+            <a href="<?php echo $url.'/departments/cba' ?>" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">CBA</span>
             </a>
           </li>
           <li class="sidebar__item-list">
-            <a href="../superadmin/view_department" class="sidebar__item">
+            <a href="<?php echo $url.'/departments/cte' ?>" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">CTE</span>
             </a>
           </li>
           <li class="sidebar__item-list">
-            <a href="../superadmin/view_department" class="sidebar__item">
+            <a href="<?php echo $url.'/departments/ccj' ?>" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">CCJ</span>
             </a>
           </li>
           <li class="sidebar__item-list">
-            <a href="../superadmin/view_department" class="sidebar__item">
+            <a href="<?php echo $url.'/departments/offices' ?>" class="sidebar__item">
               <i class="fa fa-circle sidebar__icon sidebar__icon--sub" aria-hidden="true"></i>
               <span class="sidebar__text">OFFICES</span>
             </a>
