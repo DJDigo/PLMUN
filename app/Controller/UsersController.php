@@ -58,5 +58,17 @@ class UsersController extends AppController {
 
     public function edit_staff() {
         
-        }
+    }
+
+    public function view_department() {
+        
+    }
+
+    public function reviews() {
+        
+    }
+    
+    public function view_review() {
+        
+    }
 }

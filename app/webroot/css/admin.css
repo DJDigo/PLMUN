@@ -445,3 +445,77 @@ table {
   height: 350px !important;
   margin: 0 auto;
 }
+.button-edit {
+  display: inline-block;
+  width: 60px;
+  background: #94aeff;
+  padding: 8px 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+.button-delete {
+  display: inline-block;
+  width: 60px;
+  background: #e72e2e;
+  padding: 8px 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+.button-view {
+  display: inline-block;
+  width: 60px;
+  background: #94aeff;
+  padding: 8px 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+.comments {
+  font-size: 14px;
+  padding: 0 10px;
+  line-height: 1.5em;
+}
+.review-label {
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 15px 10px 0;
+  font-weight: bold;
+}
+.review-item {
+  font-size: 14px;
+  padding: 8px 5px;
+}
+.review-item span {
+  padding: 5px;
+}
+.review-item span:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0079ff;
+  font-family: serif;
+}
+
+.review-item span.negative {
+  color: red;
+}
+.review-span {
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 5px;
+}
+.back-button {
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 19px;
+  background-color: #152f49;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #152f49;
+}
+.back-button:hover {
+  background-color: #fff;
+  color: #152f49;
+  border: 1px solid #152f49;
+}

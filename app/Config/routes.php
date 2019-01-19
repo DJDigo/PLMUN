@@ -45,6 +45,18 @@ Router::connect(
     ['controller' => 'Users', 'action' => 'edit_staff']
 );
 Router::connect(
+    '/superadmin/view_department',
+    ['controller' => 'Users', 'action' => 'view_department']
+);
+Router::connect(
+    '/superadmin/reviews',
+    ['controller' => 'Users', 'action' => 'reviews']
+);
+Router::connect(
+    '/superadmin/view_review',
+    ['controller' => 'Users', 'action' => 'view_review']
+);
+Router::connect(
 	'/', 
 	['controller' => 'pages', 'action' => 'dashboard']
 );
