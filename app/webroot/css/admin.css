@@ -519,3 +519,18 @@ table {
   color: #152f49;
   border: 1px solid #152f49;
 }
+.flash-success {
+  background: #0bff9e;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.flash-error {
+  background: #e9431a;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  color: #fff;
+}

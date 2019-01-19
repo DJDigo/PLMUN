@@ -52,7 +52,7 @@
         font-size: 14px;
         padding: 20px 10px 0;
     }
-    #dataTable td:nth-child(4) {
+    #dataTable td:nth-child(3) {
         width: 300px;
         overflow: hidden;
         text-overflow: ellipsis;

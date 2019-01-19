@@ -1,7 +1,12 @@
 <div class="panel-title">
   <h3>EDIT CITCS STAFF</h3>
 </div>
-
+<div class="flash-success">
+    <span><?php echo __($message); ?></span>
+</div>
+<div class="flash-error">
+    <span><?php echo __($message); ?></span>
+</div>
 <div class="panel-container">
   <div class="panel-content">
     <form>
