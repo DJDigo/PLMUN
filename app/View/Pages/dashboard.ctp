@@ -3,11 +3,9 @@
   <span>Welcome to</span>
   <span>Pamantasan Ng Lungsod ng Muntinlupa</span>
   <span>Feedback Portal</span>
-
-  <div class="top-message-description">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero esse quaerat optio veniam, consequuntur fugit amet explicabo ea officia molestiae? Vitae perspiciatis, reiciendis adipisci repudiandae non saepe modi repellat est?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero esse quaerat optio veniam, consequuntur fugit amet explicabo ea officia molestiae? Vitae perspiciatis, reiciendis adipisci repudiandae non saepe modi repellat est?</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero esse quaerat optio veniam, consequuntur fugit amet explicabo ea officia molestiae? Vitae perspiciatis, reiciendis adipisci repudiandae non saepe modi repellat est?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero esse quaerat optio veniam, consequuntur fugit amet explicabo ea officia molestiae? Vitae perspiciatis, reiciendis adipisci repudiandae non saepe modi repellat est?</p>
-  </div>
+    <div class="top-message-description">
+        <p>College is a great experience and exposes you to a lot of things you might no otherwise learn or experience. You learn to evaluate things, think for yourself, and become a more indenpendent person.Even if you decide not to use your specific degree, college can never be a waste of money if you get something important out of it. You degree is like money in the bank; it opens up a lot of opportunities for you.</p>
+    </div>
 </div>
 
 <div class="admin" id="admin-page">
@@ -156,7 +154,7 @@
           <div class="admin-feedback-msg">
             <textarea class="admin-feedback-textarea" placeholder="write your suggestions/feedback..." name="suggestion"></textarea>
             <span class="admin-feedback-error"></span>
-            <button class="button-publish" id="submit">Publish</button>
+            <button class="button-publish" id="submit">Submit</button>
           </div>
       </form>
     </div>

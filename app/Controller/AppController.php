@@ -53,6 +53,6 @@ class AppController extends Controller {
     public $helpers = ['Html', 'Form', 'Session'];
 
     public function beforeFilter()  {
-    	$this->Auth->allow('add', 'login', 'dashboard', 'register');
+    	$this->Auth->allow('add', 'login', 'dashboard', 'register', 'save_url_session');
     }
 }
