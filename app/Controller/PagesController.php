@@ -111,4 +111,12 @@ class PagesController extends AppController {
 			$this->Session->destroy();
 		}
 	}
+
+	public function feedback() {
+		
+	}
+	
+	public function aboutus() {
+		
+	}
 }

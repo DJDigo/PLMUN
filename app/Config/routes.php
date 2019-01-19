@@ -60,6 +60,14 @@ Router::connect(
 	'/', 
 	['controller' => 'pages', 'action' => 'dashboard']
 );
+Router::connect(
+    '/feedback',
+    ['controller' => 'pages', 'action' => 'feedback']
+);
+Router::connect(
+    '/aboutus',
+    ['controller' => 'pages', 'action' => 'aboutus']
+);
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

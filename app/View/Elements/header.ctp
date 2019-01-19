@@ -129,10 +129,27 @@
                 <span class="nav-item-text">OFFICES</span>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
-                    <a href="../PLMUN/feedback"> DEAN </a>
-                    <a href="../PLMUN/feedback"> FACULTY </a>
+                    <a href="../PLMUN/feedback"> Registrar </a>
+                    <a href="../PLMUN/feedback"> Treasury </a>
+                    <a href="../PLMUN/feedback"> Guidance </a>
+                    <a href="../PLMUN/feedback"> NSTP </a>
                 </div>
             </li>
         </ul>
     </nav>
 </header>
+
+<script>
+    $('.nav-item-text').on('mouseover', function() {
+        $('.nav-tooltip, .arrow').fadeOut(300);
+        $(this).parent().find('.nav-tooltip').fadeIn(300);
+        $(this).parent().find('.arrow').fadeIn(300);
+    });
+
+    $(document).mouseup(function(e) {
+        var container = $(".nav-tooltip");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            $('.nav-tooltip, .arrow').fadeOut(300);
+        }
+    });
+</script>

@@ -98,6 +98,7 @@ nav .nav-item {
     right: 0;
     top: 40px;
     display: none;
+    z-index: 2;
 }
 .nav-item .arrow {
     width: 0;
@@ -110,15 +111,16 @@ nav .nav-item {
     top: 30px;
     display: none;
 }
-.nav-tooltip a:nth-child(2) {
-    border-top: 1px solid #fff;
-}
 .nav-tooltip a {
     display: block;
     padding: 8px;
     text-decoration: none;
     text-align: left;
     color: #fff;
+    border-bottom: 1px solid #fff
+}
+.nav-tooltip a:last-child {
+    border-bottom: none;
 }
 .nav-tooltip a:hover {
     background: #fff;
@@ -180,4 +182,322 @@ main {
 .welcome-message-button a:hover {
     background: #fff;
     color: #ff433a;
+}
+.feedback {
+    font-size: 0;
+}
+.admin {
+    min-height: 400px;
+}
+.admin h2 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: #152f49;
+}
+.admin-title {
+    font-size: 18px;
+    color: #193654;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.admin-item {
+    display: inline-block;
+    width: 31.3%;
+    vertical-align: middle;
+    padding: 15px;
+    border: 1px solid #a8b5c3;
+    border-radius: 3px;
+    box-shadow: 2px 3px 5px #193654;
+    box-sizing: border-box;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    background: #fff;
+}
+.admin-item:nth-child(3n) {
+    margin-right: 0;
+}
+.admin-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #3e76b1;
+    padding-bottom: 5px;
+    display: block;
+}
+.admin-department {
+    font-weight: bold;
+    font-size: 14px;
+    color: #3e76b1;
+    padding-bottom: 5px;
+    display: block;
+}
+.admin-description {
+    font-size: 14px;
+}
+.admin-feedback {
+    border: 1px solid #3e76b1;
+    border-radius: 3px;
+    background: #fff;
+}
+.admin-description p {
+    height: 65px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 15px;
+}
+.feedback-results {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    border: 1px solid #3e76b1;
+    border-radius: 3px;
+    padding: 5px 0;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 1px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #152f49;
+    background: #fff;
+}
+.feedback-results:hover {
+    background: #152f49;
+    color: #fff;
+    transition: 0.3s;
+}
+.admin-container {
+    margin: 2% auto;
+    width: 1000px;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.admin-course-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #152f49;
+    display: block;
+}
+.admin-feedback-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.admin-feedback-note {
+    font-size: 12px;
+    display: block
+}
+.admin-course-department {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3e76b1;
+    display: block;
+    padding-bottom: 20px;
+}
+.admin-course-description {
+    width: 47%;
+    display: inline-block;
+    margin-right: 3%;
+    vertical-align: top;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.6);
+    min-height: 730px;
+}
+.admin-course-description p {
+    color: #152f49;
+    font-size: 16px;
+    display: block;
+    padding-bottom: 10px;
+}
+.admin-course-feedback {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    box-sizing: border-box;
+    border-left: 1px solid #313131;
+    background: rgba(255, 255, 255, 0.6);
+}
+.admin-user-feedback ul {
+    height: 230px;
+    overflow-y: auto;
+}
+.admin-feedback-textarea {
+    background: #fff;
+    border: 1px solid #3e76b1;
+    resize: none;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 15px;
+    height: 100px;
+}
+.admin-feedback-label {
+    font-size: 14px;
+}
+.admin-feedback-input {
+    background: #fff;
+    border: 1px solid #3e76b1;
+    resize: none;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+.admin-button-wrapper {
+    padding: 20px 20px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.button-publish {
+    background: #3e76b1;
+    color: #FFF;
+    border-radius: 5px;
+    border: 1px solid #3e76b1;
+    padding: 8px 15px;
+    float: right;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.admin-feedback-item {
+    font-size: 14px;
+    border-bottom: 1px dashed #050b11;
+    padding: 5px 0;
+    background: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.admin-feedback-item span {
+    font-weight: bold;
+    color: #152f49;
+}
+.admin-feedback-item p {
+    padding: 5px 0;
+}
+.admin-user-feedback {
+    padding: 10px 5px;
+    
+}
+.admin-feedback-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+.admin-feedback-note {
+    display: block;
+    font-size: 14px;
+    font-weight: initial;
+}
+.admin-feeback-guidelines {
+    border: 1px solid #152f49;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+}
+.admin-guidelines-list {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    font-size: 14px;
+}
+.admin-feedback-selectbox {
+    background: #fff;
+    border: 1px solid #3e76b1;
+    resize: none;
+    border-radius: 3px;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 6px;   
+}
+.admin-feedback-label-rate {
+    font-size: 14px;
+    display: inline-block;
+    width: 80%;
+    padding-left: 15px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.admin-feedback-form {
+    padding: 0 10px 10px;
+}
+.admin-feedback-form-item {
+    padding-bottom: 5px;
+}
+.required {
+    font-size: 20px;
+    color: #ff0000;
+    line-height: 0;
+    display: inline-block;
+    padding: 7px 0;
+    vertical-align: middle;
+}
+.admin-feedback-error {
+    font-size: 14px;
+    color: #ff0000;
+    padding: 3px 0;
+    display: block;
+}
+.flash-success {
+    font-size: 18px;
+    background: #0cc30c;
+    display: block;
+    color: #fff;
+    padding: 10px 30px;
+    text-align: left;
+    border-radius: 5px;
+}
+.about-us-container {
+    background: rgba(204, 204, 204, 0.9);
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.about-us-title {
+    text-align: center;
+    padding: 0px 0 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
+}
+.statement-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.statement-mission {
+    display: inline-block;
+    width: 49%;
+    margin-right: 2%;
+    font-size: 16px;
+    vertical-align: top;
+    background: rgba(204, 204, 204, 0.9);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    min-height: 211px;
+}
+.statement-vision {
+    display: inline-block;
+    width: 49%;
+    font-size: 16px;
+    vertical-align: top;
+    background: rgba(204, 204, 204, 0.9);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    min-height: 211px;
+}
+.statement-mission span,
+.statement-vision span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
 }

@@ -37,9 +37,6 @@
 
 	<main class="main-content">
 		<?php echo $this->fetch('content'); ?>
-		<!-- <div class="statement">
-			<?php //echo $this->element('statement'); ?>
-		</div> -->
 	</main>
 
 	<?php echo $this->element('footer'); ?>
