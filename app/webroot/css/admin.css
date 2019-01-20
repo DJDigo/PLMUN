@@ -343,7 +343,8 @@ table {
   padding: 10px 0;
 }
 .login {
-  background: #193654;
+  background: url('../img/common/background.jpg');
+  background-size: cover;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -353,15 +354,13 @@ table {
   margin: 8% auto; 
 }
 .login-form {
-  box-shadow: 0 0 3px #e5f99a;
   border-radius: 3px;
   padding: 20px;
   margin-top: 10px;
   background: #fff;
-  border: 2px solid #e5f99a;
 }
 .form {
-  border-top: 2px solid #e5f99a;
+  border-top: 2px solid #ff2520;
   margin-top: 10px;
 }
 .login-label {
