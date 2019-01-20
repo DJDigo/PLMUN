@@ -5,27 +5,27 @@
 <div class="panel-container">
   <div class="panel-content">
     <ul class="department">
-      <li class="department-list">
+      <li class="department-list"  data-aos="flip-down" data-aos-duration="1500">
         <span class="department-title">CITCS <small> ( 2000 ) </small></span>
         <span class="department-feedbacks">210</span>
       </li>
-      <li class="department-list">
+      <li class="department-list"  data-aos="flip-down" data-aos-duration="2000">
         <span class="department-title">CAS <small> ( 4124 ) </small></span>
         <span class="department-feedbacks">10</span>
       </li>
-      <li class="department-list">
+      <li class="department-list"  data-aos="flip-down" data-aos-duration="2000">
         <span class="department-title">CBA <small> ( 414 ) </small></span>
         <span class="department-feedbacks">189</span>
       </li>
-      <li class="department-list">
+      <li class="department-list"  data-aos="flip-down" data-aos-duration="2000">
         <span class="department-title">CTE <small> ( 4124 ) </small></span>
         <span class="department-feedbacks">781</span>
       </li>
-      <li class="department-list">
+      <li class="department-list"  data-aos="flip-down" data-aos-duration="2000">
         <span class="department-title">CCJ <small> ( 532 ) </small></span>
         <span class="department-feedbacks">900</span>
       </li>
-      <li class="department-list">
+      <li class="department-list"  data-aos="flip-down" data-aos-duration="1500">
         <span class="department-title">OFFICES <small> ( 1239 ) </small></span>
         <span class="department-feedbacks">123</span>
       </li>
@@ -106,4 +106,8 @@
     var ctx = document.getElementById('myChart').getContext('2d');
     window.myPie = new Chart(ctx, config);
   };
+
+  AOS.init({
+      easing: 'ease-in-out-sine'
+  });
 </script>

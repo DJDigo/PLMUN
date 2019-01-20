@@ -21,7 +21,8 @@
 	<title>
 		<?php echo 'Pamantasan ng Lungsod ng Muntinlupa'; ?>
 	</title>
-    <?php
+	<?php
+		echo $this->Html->css('aos.css');
 		echo $this->Html->css('admin.css');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -30,6 +31,7 @@
     <link href="../img/common/favicon.png" type="image/png" rel="icon"/>
 	<?= $this->Html->css('../js/datatables/datatables.min.css') ?>
 	<?= $this->Html->script('../js/jquery-3.1.0.min.js') ?>
+	<?= $this->Html->script('../js/aos.js') ?>
 	<?= $this->Html->script('../js/jquery.dataTables.min.js') ?>
 	<?= $this->Html->script('../js/datatables/datatables.min.js') ?>
 	<?= $this->Html->script('/js/chartjs.js') ?>
