@@ -502,16 +502,71 @@ main {
     color: #fff;
 }
 
+.menu-container {
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+.menu1, .menu2, .menu3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    display: block;
+}
+
+.change .menu1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: #000;
+}
+
+.change .menu2 {
+    opacity: 0;
+}
+
+.change .menu3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: #000;
+}
 
 @media only screen and (max-width: 767px) {
+    .menu-container {
+        display: inline-block;
+    }
     header {
         padding: 15px;
     }
     header img {
         width: 180px;
     }
+    nav {
+        margin-top: -5px;
+    }
     nav ul {
-        display: none;
+        position: absolute;
+        right: -100%;
+        transition: 0.5s;
+        width: 65%;
+        background: #fff;
+        z-index: 9;
+        height: 100%;
+        top: 0;
+        padding-top: 65px;
+    }
+    nav .nav-item {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px 15px;
+        border-bottom: 1px solid #ccc;
+    }
+    .nav-item-text {
+        color: #000;
+        display: block;
     }
     .welcome-text {
         font-size: 30px;
@@ -556,5 +611,18 @@ main {
     }
     .admin-guidelines-list {
         width: 100%;
+    }
+    .change ~ ul {
+        right: 0;
+    }
+    .nav-tooltip {
+        position: relative;
+        top: 0;
+        background: #fff;
+        border: #fff;
+    }
+    .nav-tooltip a {
+        border-bottom: 1px solid #f00;
+        color: #000;
     }
 }

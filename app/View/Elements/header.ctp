@@ -84,7 +84,11 @@
         </h1>
     </a>
     <nav>
-        <span>dsa</span>
+        <div class="menu-container" onclick="myFunction(this)">
+            <span class="menu1"></span>
+            <span class="menu2"></span>
+            <span class="menu3"></span>
+        </div>
         <ul>
             <li class="nav-item">
                 <span class="nav-item-text">CITCS</span>
@@ -154,5 +158,14 @@
                 $('.nav-tooltip, .arrow').fadeOut(300);
             }
         });
+    } else {
+        $('.nav-item-text').on('click', function() {
+            $('.nav-tooltip').hide();
+            $(this).parent().find('.nav-tooltip').slideToggle();
+        })
     }
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+    } 
 </script>
