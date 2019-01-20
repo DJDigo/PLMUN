@@ -162,7 +162,13 @@
         $('.nav-item-text').on('click', function() {
             $('.nav-tooltip').hide();
             $(this).parent().find('.nav-tooltip').slideToggle();
-        })
+        });
+        $(document).mouseup(function(e) {
+            var container = $("nav ul");
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                $('.menu-container').removeClass('change');
+            }
+        });
     }
 
     function myFunction(x) {
