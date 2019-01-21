@@ -67,6 +67,26 @@ Router::connect(
     ['controller' => 'departments', 'action' => 'citcs']
 );
 Router::connect(
+    '/superadmin/departments/cas',
+    ['controller' => 'departments', 'action' => 'cas']
+);
+Router::connect(
+    '/superadmin/departments/cba',
+    ['controller' => 'departments', 'action' => 'cba']
+);
+Router::connect(
+    '/superadmin/departments/cte',
+    ['controller' => 'departments', 'action' => 'cte']
+);
+Router::connect(
+    '/superadmin/departments/ccj',
+    ['controller' => 'departments', 'action' => 'ccj']
+);
+Router::connect(
+    '/superadmin/departments/offices',
+    ['controller' => 'departments', 'action' => 'offices']
+);
+Router::connect(
     '/superadmin/dean/:id',
     ['controller' => 'departments', 'action' => 'dean_edit'],
     ['pass' => ['id']]
@@ -75,6 +95,35 @@ Router::connect(
     '/superadmin/faculty/:id',
     ['controller' => 'departments', 'action' => 'faculty_edit'],
     ['pass' => ['id']]
+);
+Router::connect(
+    '/superadmin/registrar/:id',
+    ['controller' => 'departments', 'action' => 'registrar_edit'],
+    ['pass' => ['id']]
+);
+Router::connect(
+    '/superadmin/guidance/:id',
+    ['controller' => 'departments', 'action' => 'guidance_edit'],
+    ['pass' => ['id']]
+);
+Router::connect(
+    '/superadmin/nstp/:id',
+    ['controller' => 'departments', 'action' => 'nstp_edit'],
+    ['pass' => ['id']]
+);
+Router::connect(
+    '/superadmin/treasury/:id',
+    ['controller' => 'departments', 'action' => 'treasury_edit'],
+    ['pass' => ['id']]
+);
+Router::connect(
+    '/superadmin/departments/view/:id',
+    ['controller' => 'departments', 'action' => 'view'],
+    ['pass' => ['id']]
+);
+Router::connect(
+    '/superadmin/department/reviews',
+    ['controller' => 'departments', 'action' => 'reviews']
 );
 Router::connect(
     '/feedback',

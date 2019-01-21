@@ -30,11 +30,11 @@
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
-	<link href="./img/common/favicon.png" type="image/png" rel="icon"/>
-	<script src="./js/jquery-3.1.0.min.js"></script>
-	<script src="./js/typed.min.js"></script>
-	<script src="./js/aos.js"></script>
-	<script src="./js/common.js"></script>
+	<link href="<?php echo $url ?>img/common/favicon.png" type="image/png" rel="icon"/>
+	<script src="<?php echo $url ?>js/jquery-3.1.0.min.js"></script>
+	<script src="<?php echo $url ?>js/typed.min.js"></script>
+	<script src="<?php echo $url ?>js/aos.js"></script>
+	<script src="<?php echo $url ?>js/common.js"></script>
 </head>
 <body>
 	<?php echo $this->element('header'); ?>

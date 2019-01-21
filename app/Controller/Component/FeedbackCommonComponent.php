@@ -18,15 +18,21 @@ class FeedbackCommonComponent extends Component {
         return $new_data;
     }
 
-    public function __email_validations($email, $department_id, $model) {
-        $this->$model = ClassRegistry::init($model);
+    public function __email_validations($data) {
+        $this->Feedback = ClassRegistry::init('Feedback');
         $error_message = "";
-        if (!empty($email)) {
-            $check_email_exist = $this->$model->findByEmailAndDepartmentId($email,$department_id);
+        if (!empty($data)) {
+            $check_email_exist = $this->Feedback->find('first', [
+                'conditions' => [
+                    'Feedback.email' => $data['Feedback']['email'],
+                    'Feedback.department_id' => $data['Feedback']['department_id'],
+                    'Feedback.type' => $data['Feedback']['type']
+                ]
+            ]);
             if ($check_email_exist) {
                 $error_message = "Email is already exists.";
             } else { 
-                if (!$this->__checkEmail($email)) {
+                if (!$this->__checkEmail($data['Feedback']['email'])) {
                     $error_message = "Invalid email format.";
                 }
             }

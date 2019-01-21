@@ -4,7 +4,7 @@
 <?php echo $this->Session->flash(); ?>
 <div class="panel-container">
   <div class="panel-content">
-    <?php echo $this->Form->create('Dean') ?>
+    <?php echo $this->Form->create('Registrar') ?>
         <div class="form-content">
             <div class="form-list">
                 <label class="form-label">Name:</label>

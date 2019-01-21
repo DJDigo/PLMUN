@@ -52,7 +52,20 @@ class AppController extends Controller {
 
     public $helpers = ['Html', 'Form', 'Session'];
     public function beforeFilter() {
-        $this->Auth->allow('add', 'login', 'dashboard', 'register', 'save_url_session','feedback','aboutus');
+        $this->Auth->allow(
+            'add', 
+            'login', 
+            'dashboard', 
+            'register',
+            'feedback',
+            'dean',
+            'faculty',
+            'registrar',
+            'treasury',
+            'nstp',
+            'guidance',
+            'aboutus'
+        );
         if (empty($this->params['controller'])) {
             return $this->redirect(['users/']);
         }

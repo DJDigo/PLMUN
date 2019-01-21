@@ -1,3 +1,4 @@
+<?php echo $this->Session->Flash(); ?>
 <div class="welcome-message" data-aos="fade-up" data-aos-duration="2000">
     <span class="welcome-text">Welcome To PLMUN</span>
     <span class="welcome-type"></span>

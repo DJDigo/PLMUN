@@ -80,7 +80,7 @@
 <header>
     <a href="../PLMUN" class="logo">
         <h1>
-            <img src="./img/common/plmun-logo.png">
+            <img src="<?php echo $url ?>img/common/plmun-logo.png">
         </h1>
     </a>
     <nav>
@@ -94,50 +94,50 @@
                 <span class="nav-item-text">CITCS</span>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
-                    <a href="../PLMUN/feedback"> DEAN </a>
-                    <a href="../PLMUN/feedback"> FACULTY </a>
+                    <a href="<?php echo $url ?>feedbacks/dean/1"> DEAN </a>
+                    <a href="<?php echo $url ?>feedbacks/faculty/1"> FACULTY </a>
                 </div>
             </li>
             <li class="nav-item">
                 <span class="nav-item-text">CAS</span>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
-                    <a href="../PLMUN/feedback"> DEAN </a>
-                    <a href="../PLMUN/feedback"> FACULTY </a>
+                    <a href="<?php echo $url ?>feedbacks/dean/2"> DEAN </a>
+                    <a href="<?php echo $url ?>feedbacks/faculty/2"> FACULTY </a>
                 </div>
             </li>
             <li class="nav-item">
                 <span class="nav-item-text">CBA</span>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
-                    <a href="../PLMUN/feedback"> DEAN </a>
-                    <a href="../PLMUN/feedback"> FACULTY </a>
+                    <a href="<?php echo $url ?>feedbacks/dean/3"> DEAN </a>
+                    <a href="<?php echo $url ?>feedbacks/faculty/3"> FACULTY </a>
                 </div>
             </li>
             <li class="nav-item">
                 <span class="nav-item-text">CTE</span>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
-                    <a href="../PLMUN/feedback"> DEAN </a>
-                    <a href="../PLMUN/feedback"> FACULTY </a>
+                    <a href="<?php echo $url ?>feedbacks/dean/4"> DEAN </a>
+                    <a href="<?php echo $url ?>feedbacks/faculty/4"> FACULTY </a>
                 </div>
             </li>
             <li class="nav-item">
                 <span class="nav-item-text">CCJ</span>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
-                    <a href="../PLMUN/feedback"> DEAN </a>
-                    <a href="../PLMUN/feedback"> FACULTY </a>
+                    <a href="<?php echo $url ?>feedbacks/dean/5"> DEAN </a>
+                    <a href="<?php echo $url ?>feedbacks/faculty/5"> FACULTY </a>
                 </div>
             </li>
             <li class="nav-item">
                 <span class="nav-item-text">OFFICES</span>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
-                    <a href="../PLMUN/feedback"> Registrar </a>
-                    <a href="../PLMUN/feedback"> Treasury </a>
-                    <a href="../PLMUN/feedback"> Guidance </a>
-                    <a href="../PLMUN/feedback"> NSTP </a>
+                    <a href="<?php echo $url ?>feedbacks/registrar/1"> Registrar </a>
+                    <a href="<?php echo $url ?>feedbacks/treasury/1"> Treasury </a>
+                    <a href="<?php echo $url ?>feedbacks/guidance/1"> Guidance </a>
+                    <a href="<?php echo $url ?>feedbacks/nstp/1"> NSTP </a>
                 </div>
             </li>
         </ul>

@@ -114,3 +114,29 @@ Configure::write('ratings', [
 	4 => "Very Satisfactory",
 	5 => "Excellent"
 ]);
+
+Configure::write('type', [
+	'dean'      => 1,
+	'faculty'   => 2,
+	'registrar' => 3,
+	'treasury'  => 4,
+	'guidance'  => 5,
+	'nstp'      => 6
+]);
+
+Configure::write('get_type', [
+	1  => 'Dean'     ,
+	2  => 'Faculty'  ,
+	3  => 'Registrar',
+	4  => 'Treasury' ,
+	5  => 'Guidance' ,
+	6  => 'Nstp'     
+]);
+
+Configure::write('departments', [
+	1 => 'CITCS',
+	2 => 'CAS',
+	3 => 'CBA',
+	4 => 'CCJ',
+	5 => 'OFFICES'
+]);

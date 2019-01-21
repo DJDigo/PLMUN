@@ -14,7 +14,7 @@ class DepartmentCommonComponent extends Component {
                 [
                     'table' => 'deans',
                     'alias' => 'Dean',
-                    'type'  => 'INNER',
+                    'type'  => 'LEFT',
                     'conditions' => [
                         'Dean.department_id = Department.id'
                     ]
@@ -22,9 +22,41 @@ class DepartmentCommonComponent extends Component {
                 [
                     'table' => 'faculties',
                     'alias' => 'Faculty',
-                    'type'  => 'INNER',
+                    'type'  => 'LEFT',
                     'conditions' => [
                         'Faculty.department_id = Department.id'
+                    ]
+                ],
+                [
+                    'table' => 'registrar',
+                    'alias' => 'Registrar',
+                    'type'  => 'LEFT',
+                    'conditions' => [
+                        'Registrar.department_id = Department.id'
+                    ]
+                ],
+                [
+                    'table' => 'guidance',
+                    'alias' => 'Guidance',
+                    'type'  => 'LEFT',
+                    'conditions' => [
+                        'Guidance.department_id = Department.id'
+                    ]
+                ],
+                [
+                    'table' => 'nstp',
+                    'alias' => 'Nstp',
+                    'type'  => 'LEFT',
+                    'conditions' => [
+                        'Nstp.department_id = Department.id'
+                    ]
+                ],
+                [
+                    'table' => 'treasury',
+                    'alias' => 'Treasury',
+                    'type'  => 'LEFT',
+                    'conditions' => [
+                        'Treasury.department_id = Department.id'
                     ]
                 ]
             ],

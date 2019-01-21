@@ -54,7 +54,7 @@
         </ul>
       </li>
       <li class="sidebar__list">
-        <a href="../superadmin/reviews" class="sidebar__item">
+        <a href="<?php echo $url.'/departments/reviews' ?>" class="sidebar__item">
           <i class="fa fa-book sidebar__icon" aria-hidden="true"></i>
           <span class="sidebar__link-text">Reviews <small>6</small></span>
           <i class="fa fa-chevron-right sidebar__icon-right" aria-hidden="true"></i>

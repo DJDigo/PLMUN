@@ -1,7 +1,7 @@
 <div class="panel-title">
-  <h3>EDIT CITCS STAFF</h3>
+  <h3>EDIT FACULTY</h3>
 </div>
-
+<?php echo $this->Session->flash(); ?>
 <div class="panel-container">
   <div class="panel-content">
     <?php echo $this->Form->create('Faculty') ?>
