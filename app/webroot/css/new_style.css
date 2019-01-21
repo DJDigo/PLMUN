@@ -449,6 +449,15 @@ main {
     text-align: left;
     border-radius: 5px;
 }
+.flash-error {
+    font-size: 18px;
+    background: #ff3939;
+    display: block;
+    color: #fff;
+    padding: 10px 30px;
+    text-align: left;
+    border-radius: 5px;
+}
 .about-us-container {
     background: rgba(204, 204, 204, 0.9);
     max-width: 760px;
