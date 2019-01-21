@@ -1,4 +1,10 @@
 <div class="feedback">
+    <div class="flash-success">
+        <span><?php echo __($message); ?></span>
+    </div>
+    <div class="flash-error">
+        <span><?php echo __($message); ?></span>
+    </div>
     <div class="admin" id="admin-page" data-aos="fade-up" data-aos-duration="2000">
         <div class="admin-container">
             <div class="admin-course-description">
