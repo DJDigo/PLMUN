@@ -206,6 +206,9 @@
       },
       options: {
         responsive: true,
+        tooltips: {
+          enabled: false
+        },
         legend: {
           display: true,
           position: 'right',
