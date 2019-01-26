@@ -21,7 +21,6 @@
                 <td> <?php echo !empty($feedback['Feedback']['suggestion']) ? $feedback['Feedback']['suggestion'] : 'No suggestions.' ?> </td>
                 <td> 
                     <a href="<?php echo $url.'superadmin/departments/view/'.$feedback['Feedback']['id'] ?>" class="button-view"> View </a>
-                    <a href="" class="button-delete"> Delete </a>
                 </td>
             </tr>
             <?php endforeach; ?>

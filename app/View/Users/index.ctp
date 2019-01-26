@@ -6,12 +6,12 @@
   <div class="panel-content">
     <div class="dashboard-select">
       <select id="dashboard-select">
-        <option value="0">CITCS</option>
-        <option value="1">CAS</option>  
-        <option value="2">CBA</option>
-        <option value="3">CTE</option>
-        <option value="4">CCJ</option>
-        <option value="5">OFFICES</option>
+        <option value="1">CITCS</option>
+        <option value="2">CAS</option>  
+        <option value="3">CBA</option>
+        <option value="4">CTE</option>
+        <option value="5">CCJ</option>
+        <option value="6">OFFICES</option>
       </select>  
     </div>
     <ul class="department">
@@ -132,28 +132,33 @@
         ]
       }   
     ];
-
+    let url = "<?php echo $url ?>";
     $('#dashboard-select').on('change', function() {
       let getSelectValue = $(this).val();
-      handleChartjs(getSelectValue,data);
+      // let url = "<?php echo $url ?>";
+      $.ajax({
+        method: 'POST',
+        data: {id:getSelectValue},
+        url: url+'users/get_ratings/',
+        dataType: 'json',
+        success: function(response) {
+          handleChartjs(response);
+        }
+      })
     })
-
-    $(data[0].value).each(function(key,value) {
-      $('.panel-chart-wrapper').append(`
-        <div class="panel-chart" data-aos="fade-up" data-aos-duration="1500">
-          <div class="panel-chart-title">
-            <span>`+ value['subordinate'] + `</span>
-          </div>
-          <canvas id=mychart-`+ key +`></canvas>
-        </div>
-      `)
-      handleDisplayChart(key, value['data_value']);
+    $.ajax({
+      method: 'POST',
+      data: {id:1},
+      url: url+'users/get_ratings/',
+      dataType: 'json',
+      success: function(response) {
+        handleChartjs(response);
+      }
     });
   });
 
-  function handleChartjs(id, data) {
-    let getData = data[id];
-    $(getData.value).each(function(key,value) {
+  function handleChartjs(data) {
+    $(data.value).each(function(key,value) {
       $('.loading-screen').show();
       $('.panel-chart-wrapper').html('');
       setTimeout(function() {

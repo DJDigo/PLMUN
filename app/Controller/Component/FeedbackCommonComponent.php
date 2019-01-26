@@ -50,5 +50,10 @@ class FeedbackCommonComponent extends Component {
             return true;
         }
     }
+
+    public function get_ratings() {
+        
+    }
+
 }
     

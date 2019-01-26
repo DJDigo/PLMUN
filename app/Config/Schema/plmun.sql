@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 04, 2018 at 02:47 PM
+-- Generation Time: Jan 21, 2019 at 03:07 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -37,42 +37,16 @@ CREATE TABLE `deans` (
   `deleted_date` datetime DEFAULT NULL COMMENT 'Deleted date'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
 --
--- Table structure for table `dean_feedbacks`
+-- Dumping data for table `deans`
 --
 
-CREATE TABLE `dean_feedbacks` (
-  `id` int(11) NOT NULL,
-  `department_id` int(11) NOT NULL COMMENT 'Foreign Key',
-  `email` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Email of user',
-  `suggestion` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Suggestions',
-  `rating_1` int(11) NOT NULL,
-  `rating_2` int(11) NOT NULL,
-  `rating_3` int(11) NOT NULL,
-  `rating_4` int(11) NOT NULL,
-  `rating_5` int(11) NOT NULL,
-  `rating_6` int(11) NOT NULL,
-  `rating_7` int(11) NOT NULL,
-  `rating_8` int(11) NOT NULL,
-  `created` datetime DEFAULT NULL COMMENT 'Date Created',
-  `modified` datetime DEFAULT NULL COMMENT 'Modified Date',
-  `deleted` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0: not deleted 1: deleted',
-  `deleted_date` datetime DEFAULT NULL COMMENT 'Deleted date'
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `dean_feedbacks`
---
-
-INSERT INTO `dean_feedbacks` (`id`, `department_id`, `email`, `suggestion`, `rating_1`, `rating_2`, `rating_3`, `rating_4`, `rating_5`, `rating_6`, `rating_7`, `rating_8`, `created`, `modified`, `deleted`, `deleted_date`) VALUES
-(10, 1, 'obamenandro@gmail.com', 'asdasdasdasdsad', 5, 5, 5, 5, 5, 5, 5, 5, '2018-11-03 13:17:03', '2018-11-03 13:17:03', 0, NULL),
-(11, 2, 'aaaaaaaaaaaa@gmail.com', 'asdasdasd', 5, 5, 5, 5, 5, 5, 5, 5, '2018-11-03 13:20:06', '2018-11-03 13:20:06', 0, NULL),
-(12, 5, 'obamenandrsso@gmail.com', 'aaaaaaaaaa', 5, 5, 5, 5, 5, 5, 5, 5, '2018-11-03 13:20:38', '2018-11-03 13:20:38', 0, NULL),
-(13, 2, 'obamenandro@gmail.com', '', 5, 5, 5, 5, 5, 5, 5, 5, '2018-11-03 13:50:30', '2018-11-03 13:50:30', 0, NULL),
-(14, 3, 'obamenandro@gmail.com', '', 5, 5, 5, 5, 5, 5, 5, 5, '2018-11-03 13:51:19', '2018-11-03 13:51:19', 0, NULL),
-(15, 2, 'obamenandsro@gmail.com', '', 4, 5, 5, 5, 5, 5, 5, 5, '2018-11-04 07:28:15', '2018-11-04 07:28:15', 0, NULL);
+INSERT INTO `deans` (`id`, `department_id`, `title`, `description`, `created`, `modified`, `deleted`, `deleted_date`) VALUES
+(1, 1, 'aaaaa', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus labore. Vel neque similique animi, vero tenetur iste mollitia repellendus cumque dolorum sit corrupti odit velit quia culpa distinctio perferendis.', NULL, '2019-01-19 10:41:11', 0, NULL),
+(4, 4, 'aaaaa', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus labore. Vel neque similique animi, vero tenetur iste mollitia repellendus cumque dolorum sit corrupti odit velit quia culpa distinctio perferendis.', NULL, '2019-01-19 10:41:11', 0, NULL),
+(3, 3, 'Dean', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus labore. Vel neque similique animi, vero tenetur iste mollitia repellendus cumque dolorum sit corrupti odit velit quia culpa distinctio perferendis.', NULL, '2019-01-20 08:55:36', 0, NULL),
+(2, 2, 'Dean', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus labore. Vel neque similique animi, vero tenetur iste mollitia repellendus cumque dolorum sit corrupti odit velit quia culpa distinctio perferendis.', NULL, '2019-01-20 08:52:19', 0, NULL),
+(5, 5, 'Dean', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus labore. Vel neque similique animi, vero tenetur iste mollitia repellendus cumque dolorum sit corrupti odit velit quia culpa distinctio perferendis.', NULL, '2019-01-20 08:55:15', 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -118,15 +92,27 @@ CREATE TABLE `faculties` (
   `deleted_date` datetime DEFAULT NULL COMMENT 'Deleted date'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `faculties`
+--
+
+INSERT INTO `faculties` (`id`, `department_id`, `title`, `description`, `created`, `modified`, `deleted`, `deleted_date`) VALUES
+(1, 1, 'Facultys', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id vero quo excepturi distinctio assumenda harum ipsa, inventore doloremque non', NULL, '2019-01-19 10:50:54', 0, NULL),
+(2, 2, 'Faculty', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus labore. Vel neque similique animi, vero tenetur iste mollitia repellendus cumque dolorum sit corrupti odit velit quia culpa distinctio perferendis.', NULL, '2019-01-20 08:53:11', 0, NULL),
+(3, 3, 'Faculty', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus labore. Vel neque similique animi, vero tenetur iste mollitia repellendus cumque dolorum sit corrupti odit velit quia culpa distinctio perferendis.', NULL, '2019-01-20 08:55:49', 0, NULL),
+(4, 4, 'aaaaa', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus labore. Vel neque similique animi, vero tenetur iste mollitia repellendus cumque dolorum sit corrupti odit velit quia culpa distinctio perferendis.', NULL, '2019-01-19 10:41:11', 0, NULL),
+(5, 5, 'Faculty', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus labore. Vel neque similique animi, vero tenetur iste mollitia repellendus cumque dolorum sit corrupti odit velit quia culpa distinctio perferendis.', NULL, '2019-01-20 08:55:26', 0, NULL);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `faculty_feedbacks`
+-- Table structure for table `feedbacks`
 --
 
-CREATE TABLE `faculty_feedbacks` (
+CREATE TABLE `feedbacks` (
   `id` int(11) NOT NULL,
   `department_id` int(11) NOT NULL COMMENT 'Foreign Key',
+  `type` int(11) NOT NULL,
   `email` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Email of user',
   `suggestion` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Suggestions',
   `rating_1` int(11) NOT NULL,
@@ -144,111 +130,112 @@ CREATE TABLE `faculty_feedbacks` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `faculty_feedbacks`
+-- Dumping data for table `feedbacks`
 --
 
-INSERT INTO `faculty_feedbacks` (`id`, `department_id`, `email`, `suggestion`, `rating_1`, `rating_2`, `rating_3`, `rating_4`, `rating_5`, `rating_6`, `rating_7`, `rating_8`, `created`, `modified`, `deleted`, `deleted_date`) VALUES
-(1, 1, 'obamenandro@gmail.com', '', 5, 5, 5, 5, 5, 5, 5, 5, '2018-11-04 07:40:19', '2018-11-04 07:40:19', 0, NULL);
+INSERT INTO `feedbacks` (`id`, `department_id`, `type`, `email`, `suggestion`, `rating_1`, `rating_2`, `rating_3`, `rating_4`, `rating_5`, `rating_6`, `rating_7`, `rating_8`, `created`, `modified`, `deleted`, `deleted_date`) VALUES
+(6, 2, 1, 'obamenandro@gmail.com', 'aaaa', 5, 5, 5, 5, 5, 5, 5, 5, '2019-01-21 13:59:17', '2019-01-21 13:59:17', 0, NULL),
+(5, 1, 2, 'obamenandro@gmail.com', 'aaaaa', 5, 2, 1, 1, 5, 5, 5, 5, '2019-01-21 13:59:07', '2019-01-21 13:59:07', 0, NULL),
+(4, 1, 1, 'obamenandro@gmail.com', 'aaaaa', 5, 5, 5, 5, 5, 5, 5, 5, '2019-01-21 13:58:55', '2019-01-21 13:58:55', 0, NULL),
+(7, 2, 2, 'obamenandro@gmail.com', 'aaa', 5, 5, 5, 5, 5, 5, 5, 5, '2019-01-21 13:59:32', '2019-01-21 13:59:32', 0, NULL),
+(8, 1, 6, 'obamenandro@gmail.com', 'aaa', 5, 5, 5, 5, 5, 5, 5, 5, '2019-01-21 14:24:27', '2019-01-21 14:24:27', 0, NULL),
+(9, 1, 5, 'obamenandro@gmail.com', 'aaa', 5, 5, 5, 5, 5, 5, 5, 5, '2019-01-21 14:24:48', '2019-01-21 14:24:48', 0, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `guidance_feedbacks`
+-- Table structure for table `guidance`
 --
 
-CREATE TABLE `guidance_feedbacks` (
+CREATE TABLE `guidance` (
   `id` int(11) NOT NULL,
   `department_id` int(11) NOT NULL COMMENT 'Foreign Key',
-  `email` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Email of user',
-  `suggestion` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Suggestions',
-  `rating_1` int(11) NOT NULL,
-  `rating_2` int(11) NOT NULL,
-  `rating_3` int(11) NOT NULL,
-  `rating_4` int(11) NOT NULL,
-  `rating_5` int(11) NOT NULL,
-  `rating_6` int(11) NOT NULL,
-  `rating_7` int(11) NOT NULL,
-  `rating_8` int(11) NOT NULL,
+  `title` varchar(255) CHARACTER SET utf8 NOT NULL COMMENT 'Title',
+  `description` varchar(255) CHARACTER SET utf8 NOT NULL COMMENT 'Title',
   `created` datetime DEFAULT NULL COMMENT 'Date Created',
   `modified` datetime DEFAULT NULL COMMENT 'Modified Date',
   `deleted` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0: not deleted 1: deleted',
   `deleted_date` datetime DEFAULT NULL COMMENT 'Deleted date'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `guidance`
+--
+
+INSERT INTO `guidance` (`id`, `department_id`, `title`, `description`, `created`, `modified`, `deleted`, `deleted_date`) VALUES
+(1, 6, 'GUIDANCE', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus labore. Vel neque similique animi, vero tenetur iste mollitia repellendus cumque dolorum sit corrupti odit velit quia culpa distinctio perferendis.', NULL, '2019-01-19 10:41:11', 0, NULL);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nstp_feedbacks`
+-- Table structure for table `nstp`
 --
 
-CREATE TABLE `nstp_feedbacks` (
+CREATE TABLE `nstp` (
   `id` int(11) NOT NULL,
   `department_id` int(11) NOT NULL COMMENT 'Foreign Key',
-  `email` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Email of user',
-  `suggestion` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Suggestions',
-  `rating_1` int(11) NOT NULL,
-  `rating_2` int(11) NOT NULL,
-  `rating_3` int(11) NOT NULL,
-  `rating_4` int(11) NOT NULL,
-  `rating_5` int(11) NOT NULL,
-  `rating_6` int(11) NOT NULL,
-  `rating_7` int(11) NOT NULL,
-  `rating_8` int(11) NOT NULL,
+  `title` varchar(255) CHARACTER SET utf8 NOT NULL COMMENT 'Title',
+  `description` varchar(255) CHARACTER SET utf8 NOT NULL COMMENT 'Title',
   `created` datetime DEFAULT NULL COMMENT 'Date Created',
   `modified` datetime DEFAULT NULL COMMENT 'Modified Date',
   `deleted` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0: not deleted 1: deleted',
   `deleted_date` datetime DEFAULT NULL COMMENT 'Deleted date'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `nstp`
+--
+
+INSERT INTO `nstp` (`id`, `department_id`, `title`, `description`, `created`, `modified`, `deleted`, `deleted_date`) VALUES
+(1, 6, 'NSTP', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus labore. Vel neque similique animi, vero tenetur iste mollitia repellendus cumque dolorum sit corrupti odit velit quia culpa distinctio perferendis.', NULL, '2019-01-19 10:41:11', 0, NULL);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `registrar_feedbacks`
+-- Table structure for table `registrar`
 --
 
-CREATE TABLE `registrar_feedbacks` (
+CREATE TABLE `registrar` (
   `id` int(11) NOT NULL,
   `department_id` int(11) NOT NULL COMMENT 'Foreign Key',
-  `email` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Email of user',
-  `suggestion` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Suggestions',
-  `rating_1` int(11) NOT NULL,
-  `rating_2` int(11) NOT NULL,
-  `rating_3` int(11) NOT NULL,
-  `rating_4` int(11) NOT NULL,
-  `rating_5` int(11) NOT NULL,
-  `rating_6` int(11) NOT NULL,
-  `rating_7` int(11) NOT NULL,
-  `rating_8` int(11) NOT NULL,
+  `title` varchar(255) CHARACTER SET utf8 NOT NULL COMMENT 'Title',
+  `description` varchar(255) CHARACTER SET utf8 NOT NULL COMMENT 'Title',
   `created` datetime DEFAULT NULL COMMENT 'Date Created',
   `modified` datetime DEFAULT NULL COMMENT 'Modified Date',
   `deleted` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0: not deleted 1: deleted',
   `deleted_date` datetime DEFAULT NULL COMMENT 'Deleted date'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `registrar`
+--
+
+INSERT INTO `registrar` (`id`, `department_id`, `title`, `description`, `created`, `modified`, `deleted`, `deleted_date`) VALUES
+(1, 6, 'REGISTRAR', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus labore. Vel neque similique animi, vero tenetur iste mollitia repellendus cumque dolorum sit corrupti odit velit quia culpa distinctio perferendis.', NULL, '2019-01-21 14:43:58', 0, NULL);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `treasury_feedbacks`
+-- Table structure for table `treasury`
 --
 
-CREATE TABLE `treasury_feedbacks` (
+CREATE TABLE `treasury` (
   `id` int(11) NOT NULL,
   `department_id` int(11) NOT NULL COMMENT 'Foreign Key',
-  `email` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Email of user',
-  `suggestion` varchar(1000) CHARACTER SET utf8 NOT NULL COMMENT 'Suggestions',
-  `rating_1` int(11) NOT NULL,
-  `rating_2` int(11) NOT NULL,
-  `rating_3` int(11) NOT NULL,
-  `rating_4` int(11) NOT NULL,
-  `rating_5` int(11) NOT NULL,
-  `rating_6` int(11) NOT NULL,
-  `rating_7` int(11) NOT NULL,
-  `rating_8` int(11) NOT NULL,
+  `title` varchar(255) CHARACTER SET utf8 NOT NULL COMMENT 'Title',
+  `description` varchar(255) CHARACTER SET utf8 NOT NULL COMMENT 'Title',
   `created` datetime DEFAULT NULL COMMENT 'Date Created',
   `modified` datetime DEFAULT NULL COMMENT 'Modified Date',
   `deleted` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0: not deleted 1: deleted',
   `deleted_date` datetime DEFAULT NULL COMMENT 'Deleted date'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `treasury`
+--
+
+INSERT INTO `treasury` (`id`, `department_id`, `title`, `description`, `created`, `modified`, `deleted`, `deleted_date`) VALUES
+(1, 6, 'TREASURY', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatibus labore. Vel neque similique animi, vero tenetur iste mollitia repellendus cumque dolorum sit corrupti odit velit quia culpa distinctio perferendis.', NULL, '2019-01-19 10:41:11', 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -285,13 +272,6 @@ ALTER TABLE `deans`
   ADD KEY `department_id` (`department_id`);
 
 --
--- Indexes for table `dean_feedbacks`
---
-ALTER TABLE `dean_feedbacks`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `department_id` (`department_id`);
-
---
 -- Indexes for table `departments`
 --
 ALTER TABLE `departments`
@@ -305,37 +285,37 @@ ALTER TABLE `faculties`
   ADD KEY `department_id` (`department_id`);
 
 --
--- Indexes for table `faculty_feedbacks`
+-- Indexes for table `feedbacks`
 --
-ALTER TABLE `faculty_feedbacks`
+ALTER TABLE `feedbacks`
   ADD PRIMARY KEY (`id`),
   ADD KEY `department_id` (`department_id`);
 
 --
--- Indexes for table `guidance_feedbacks`
+-- Indexes for table `guidance`
 --
-ALTER TABLE `guidance_feedbacks`
+ALTER TABLE `guidance`
   ADD PRIMARY KEY (`id`),
   ADD KEY `department_id` (`department_id`);
 
 --
--- Indexes for table `nstp_feedbacks`
+-- Indexes for table `nstp`
 --
-ALTER TABLE `nstp_feedbacks`
+ALTER TABLE `nstp`
   ADD PRIMARY KEY (`id`),
   ADD KEY `department_id` (`department_id`);
 
 --
--- Indexes for table `registrar_feedbacks`
+-- Indexes for table `registrar`
 --
-ALTER TABLE `registrar_feedbacks`
+ALTER TABLE `registrar`
   ADD PRIMARY KEY (`id`),
   ADD KEY `department_id` (`department_id`);
 
 --
--- Indexes for table `treasury_feedbacks`
+-- Indexes for table `treasury`
 --
-ALTER TABLE `treasury_feedbacks`
+ALTER TABLE `treasury`
   ADD PRIMARY KEY (`id`),
   ADD KEY `department_id` (`department_id`);
 
@@ -353,12 +333,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `deans`
 --
 ALTER TABLE `deans`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `dean_feedbacks`
---
-ALTER TABLE `dean_feedbacks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `departments`
 --
@@ -368,32 +343,32 @@ ALTER TABLE `departments`
 -- AUTO_INCREMENT for table `faculties`
 --
 ALTER TABLE `faculties`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
--- AUTO_INCREMENT for table `faculty_feedbacks`
+-- AUTO_INCREMENT for table `feedbacks`
 --
-ALTER TABLE `faculty_feedbacks`
+ALTER TABLE `feedbacks`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+--
+-- AUTO_INCREMENT for table `guidance`
+--
+ALTER TABLE `guidance`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `guidance_feedbacks`
+-- AUTO_INCREMENT for table `nstp`
 --
-ALTER TABLE `guidance_feedbacks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `nstp`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `nstp_feedbacks`
+-- AUTO_INCREMENT for table `registrar`
 --
-ALTER TABLE `nstp_feedbacks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `registrar`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `registrar_feedbacks`
+-- AUTO_INCREMENT for table `treasury`
 --
-ALTER TABLE `registrar_feedbacks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `treasury_feedbacks`
---
-ALTER TABLE `treasury_feedbacks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `treasury`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `users`
 --
