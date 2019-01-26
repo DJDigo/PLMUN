@@ -150,14 +150,14 @@ class UsersController extends AppController {
             }
         }
         return [
-            $rating_1 != 0 ? round($number_feedbacks / $rating_1*100) : 0,
-            $rating_2 != 0 ? round($number_feedbacks / $rating_2*100) : 0,
-            $rating_3 != 0 ? round($number_feedbacks / $rating_3*100) : 0,
-            $rating_4 != 0 ? round($number_feedbacks / $rating_4*100) : 0,
-            $rating_5 != 0 ? round($number_feedbacks / $rating_5*100) : 0,
-            $rating_6 != 0 ? round($number_feedbacks / $rating_6*100) : 0,
-            $rating_7 != 0 ? round($number_feedbacks / $rating_7*100) : 0,
-            $rating_8 != 0 ? round($number_feedbacks / $rating_8*100) : 0
+            $rating_1 != 0 ? round($number_feedbacks / $rating_1*100) : 100,
+            $rating_2 != 0 ? round($number_feedbacks / $rating_2*100) : 100,
+            $rating_3 != 0 ? round($number_feedbacks / $rating_3*100) : 100,
+            $rating_4 != 0 ? round($number_feedbacks / $rating_4*100) : 100,
+            $rating_5 != 0 ? round($number_feedbacks / $rating_5*100) : 100,
+            $rating_6 != 0 ? round($number_feedbacks / $rating_6*100) : 100,
+            $rating_7 != 0 ? round($number_feedbacks / $rating_7*100) : 100,
+            $rating_8 != 0 ? round($number_feedbacks / $rating_8*100) : 100
         ];
     }
 }
