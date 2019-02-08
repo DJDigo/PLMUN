@@ -217,9 +217,12 @@
             display: true,
             stacked: true,
             ticks: {
-              min: 0, // minimum value
-              max: 10 // maximum value
-            }
+              min: 10, // minimum value
+              max: 100, // maximum value
+              callback: function (value) {
+                return (value / this.max * 100).toFixed(0) + '%'; // convert it to percentage
+              },
+            },
           }]
         },
         responsive: true,
