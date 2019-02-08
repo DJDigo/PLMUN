@@ -189,58 +189,46 @@
         medyogreen:'rgb(158, 226, 209)'
     };
 
+    var barChartData = {
+			labels: ['0', '1', '2', '3', '4', '5', '6','7'],
+			datasets: [{
+				label: ' ',
+				backgroundColor: [
+          window.chartColors.green,
+          window.chartColors.red,
+          window.chartColors.blue,
+          window.chartColors.yellow,
+          window.chartColors.violet,
+          window.chartColors.orange,
+          window.chartColors.darkblue,
+          window.chartColors.medyogreen
+        ],
+				borderWidth: 1,
+				data: data,
+			}]
+		};
+
     var config = {
-      type: 'pie',
-      data: {
-        datasets: [{
-          data: data,
-          labelColor: '#FFF',
-          labelFontSize: '16',
-          backgroundColor: [
-            window.chartColors.green,
-            window.chartColors.red,
-            window.chartColors.blue,
-            window.chartColors.yellow,
-            window.chartColors.violet,
-            window.chartColors.orange,
-            window.chartColors.darkblue,
-            window.chartColors.medyogreen
-          ],
-          label: 'Chart'
-        }],
-      },
+      type: 'bar',
+      data: barChartData,
       options: {
+        scales: {
+          yAxes: [{
+            display: true,
+            stacked: true,
+            ticks: {
+              min: 0, // minimum value
+              max: 10 // maximum value
+            }
+          }]
+        },
         responsive: true,
-        tooltips: {
-          enabled: false
-        },
         legend: {
-          display: true,
-          position: 'right',
+          display: false
         },
-        animation: false,
-        plugins: {
-          datalabels: {
-            formatter: function(value, context) {
-              var length = Object.keys(context['dataset']['data']).length
-              var total = 0;
+      }
+    }
 
-              for ( let a = 0; a < length; a++ ) {
-                var b = context['dataset']['data'][a];
-                total = total + b;
-              }
-
-              if (value != 0) {
-                return Math.round((value/total)*10000) / 100 + '%';
-              } else {
-                return '';
-              }
-            },
-            color: "#FFFFFF"
-          }
-        }
-      },
-    };
     var ctx = document.getElementById('mychart-'+key).getContext('2d');
     window.myPie = new Chart(ctx, config);
   }
