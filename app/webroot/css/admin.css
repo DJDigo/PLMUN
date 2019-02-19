@@ -584,6 +584,7 @@ table {
   outline: none;
   padding: 0 10px;
   box-shadow: 1px 1px 3px #d6d6d6;
+  margin-left: 20px;
 }
 .loading-screen {
   width: 400px;

@@ -5,6 +5,11 @@
 <div class="panel-container">
   <div class="panel-content">
     <div class="dashboard-select">
+      <select id="dashboard-sort">
+        <option value="1">Month</option>
+        <option value="2">Year</option>  
+        <option value="3">Weekly</option>
+      </select>  
       <select id="dashboard-select">
         <option value="1">CITCS</option>
         <option value="2">CAS</option>  
