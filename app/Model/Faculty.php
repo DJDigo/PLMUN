@@ -1,7 +1,7 @@
 <?php
 App::uses('AppModel', 'Model');
 
-class Dean extends AppModel {
+class Faculty extends AppModel {
    public $validate = [
         'title' => [
             'notBlank' => [

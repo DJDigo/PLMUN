@@ -80,9 +80,13 @@ class UsersController extends AppController {
         if ($this->request->is('ajax')) {
             $data = $this->request->data;
             $this->FeedBack = ClassRegistry::init('Feedback');
-
+            $conditions = [];
+            if (!empty($data['month'])) {
+                $conditions['MONTH(Feedback.created)'] = $data['month'];
+            }
+            $conditions['Feedback.department_id'] = $data['id'];
             $feedbacks = $this->FeedBack->find('all', [
-                'conditions' => ['Feedback.department_id' => $data['id']],
+                'conditions' => $conditions,
                 'order' => 'Feedback.type DESC'
             ]);
             

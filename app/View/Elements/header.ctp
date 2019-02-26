@@ -78,7 +78,7 @@
 
 <!-- NEW HEADER -->
 <header>
-    <a href="../PLMUN" class="logo">
+    <a href="<?php echo $url ?>" class="logo">
         <h1>
             <img src="<?php echo $url ?>img/common/plmun-logo.png">
         </h1>
@@ -91,46 +91,57 @@
         </div>
         <ul>
             <li class="nav-item">
+            <?php if((empty($this->Session->read('feedback_id')) && empty($this->Session->read('offices_id'))) || $this->Session->read('feedback_id') == 1): ?>
                 <span class="nav-item-text">CITCS</span>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
                     <a href="<?php echo $url ?>feedbacks/dean/1"> DEAN </a>
                     <a href="<?php echo $url ?>feedbacks/faculty/1"> FACULTY </a>
                 </div>
+            <?php endif; ?>
             </li>
             <li class="nav-item">
+            <?php if((empty($this->Session->read('feedback_id')) && empty($this->Session->read('offices_id'))) || $this->Session->read('feedback_id') == 2): ?>
                 <span class="nav-item-text">CAS</span>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
                     <a href="<?php echo $url ?>feedbacks/dean/2"> DEAN </a>
                     <a href="<?php echo $url ?>feedbacks/faculty/2"> FACULTY </a>
                 </div>
+            <?php endif; ?>
             </li>
             <li class="nav-item">
+            <?php if((empty($this->Session->read('feedback_id')) && empty($this->Session->read('offices_id'))) || $this->Session->read('feedback_id') == 3): ?>
                 <span class="nav-item-text">CBA</span>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
                     <a href="<?php echo $url ?>feedbacks/dean/3"> DEAN </a>
                     <a href="<?php echo $url ?>feedbacks/faculty/3"> FACULTY </a>
                 </div>
+            <?php endif; ?>
             </li>
             <li class="nav-item">
+            <?php if((empty($this->Session->read('feedback_id')) && empty($this->Session->read('offices_id'))) || $this->Session->read('feedback_id') == 4): ?>
                 <span class="nav-item-text">CTE</span>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
                     <a href="<?php echo $url ?>feedbacks/dean/4"> DEAN </a>
                     <a href="<?php echo $url ?>feedbacks/faculty/4"> FACULTY </a>
                 </div>
+            <?php endif; ?>
             </li>
             <li class="nav-item">
+            <?php if((empty($this->Session->read('feedback_id')) && empty($this->Session->read('offices_id'))) || $this->Session->read('feedback_id') == 5): ?>
                 <span class="nav-item-text">CCJ</span>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
                     <a href="<?php echo $url ?>feedbacks/dean/5"> DEAN </a>
                     <a href="<?php echo $url ?>feedbacks/faculty/5"> FACULTY </a>
                 </div>
+            <?php endif; ?>
             </li>
             <li class="nav-item">
+            <?php if((empty($this->Session->read('feedback_id')) && empty($this->Session->read('offices_id'))) || $this->Session->check('offices_id')): ?>
                 <span class="nav-item-text">OFFICES</span>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
@@ -139,6 +150,7 @@
                     <a href="<?php echo $url ?>feedbacks/guidance/1"> Guidance </a>
                     <a href="<?php echo $url ?>feedbacks/nstp/1"> NSTP </a>
                 </div>
+            <?php endif; ?>
             </li>
         </ul>
     </nav>
