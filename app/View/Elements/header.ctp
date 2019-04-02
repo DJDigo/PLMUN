@@ -91,58 +91,58 @@
         </div>
         <ul>
             <li class="nav-item">
-            <?php if((empty($this->Session->read('feedback_id')) && empty($this->Session->read('offices_id'))) || $this->Session->read('feedback_id') == 1): ?>
                 <span class="nav-item-text">CITCS</span>
+                <?php if($this->Session->read('Auth.User.username') == 'citcs'): ?>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
                     <a href="<?php echo $url ?>feedbacks/dean/1"> DEAN </a>
                     <a href="<?php echo $url ?>feedbacks/faculty/1"> FACULTY </a>
                 </div>
-            <?php endif; ?>
+                <?php endif; ?>
             </li>
             <li class="nav-item">
-            <?php if((empty($this->Session->read('feedback_id')) && empty($this->Session->read('offices_id'))) || $this->Session->read('feedback_id') == 2): ?>
                 <span class="nav-item-text">CAS</span>
+                <?php if($this->Session->read('Auth.User.username') == 'cas'): ?>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
                     <a href="<?php echo $url ?>feedbacks/dean/2"> DEAN </a>
                     <a href="<?php echo $url ?>feedbacks/faculty/2"> FACULTY </a>
                 </div>
-            <?php endif; ?>
+                <?php endif; ?>
             </li>
             <li class="nav-item">
-            <?php if((empty($this->Session->read('feedback_id')) && empty($this->Session->read('offices_id'))) || $this->Session->read('feedback_id') == 3): ?>
                 <span class="nav-item-text">CBA</span>
+                <?php if($this->Session->read('Auth.User.username') == 'cba'): ?>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
                     <a href="<?php echo $url ?>feedbacks/dean/3"> DEAN </a>
                     <a href="<?php echo $url ?>feedbacks/faculty/3"> FACULTY </a>
                 </div>
-            <?php endif; ?>
+                <?php endif; ?>
             </li>
             <li class="nav-item">
-            <?php if((empty($this->Session->read('feedback_id')) && empty($this->Session->read('offices_id'))) || $this->Session->read('feedback_id') == 4): ?>
                 <span class="nav-item-text">CTE</span>
+                <?php if($this->Session->read('Auth.User.username') == 'cte'): ?>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
                     <a href="<?php echo $url ?>feedbacks/dean/4"> DEAN </a>
                     <a href="<?php echo $url ?>feedbacks/faculty/4"> FACULTY </a>
                 </div>
-            <?php endif; ?>
+                <?php endif; ?>
             </li>
             <li class="nav-item">
-            <?php if((empty($this->Session->read('feedback_id')) && empty($this->Session->read('offices_id'))) || $this->Session->read('feedback_id') == 5): ?>
                 <span class="nav-item-text">CCJ</span>
+                <?php if($this->Session->read('Auth.User.username') == 'ccj'): ?>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
                     <a href="<?php echo $url ?>feedbacks/dean/5"> DEAN </a>
                     <a href="<?php echo $url ?>feedbacks/faculty/5"> FACULTY </a>
                 </div>
-            <?php endif; ?>
+                <?php endif; ?>
             </li>
             <li class="nav-item">
-            <?php if((empty($this->Session->read('feedback_id')) && empty($this->Session->read('offices_id'))) || $this->Session->check('offices_id')): ?>
                 <span class="nav-item-text">OFFICES</span>
+                <?php if($this->Session->read('Auth.User.username') == 'offices'): ?>
                 <span class="arrow"></span>
                 <div class="nav-tooltip">
                     <a href="<?php echo $url ?>feedbacks/registrar/1"> Registrar </a>
@@ -150,7 +150,15 @@
                     <a href="<?php echo $url ?>feedbacks/guidance/1"> Guidance </a>
                     <a href="<?php echo $url ?>feedbacks/nstp/1"> NSTP </a>
                 </div>
-            <?php endif; ?>
+                <?php endif; ?>
+            </li>
+            <li class="nav-item">
+                <span class="nav-item-text">OTHERS</span>
+                <span class="arrow"></span>
+                <div class="nav-tooltip" style="font-size:11px">
+                    <a href="<?php echo $url ?>departments/change_password"> Change Password </a>
+                    <a href="<?php echo $url ?>departments/logout"> Logout </a>
+                </div>
             </li>
         </ul>
     </nav>

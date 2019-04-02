@@ -11,6 +11,9 @@ class UsersController extends AppController {
     public function beforeFilter() {
         parent::beforeFilter();
         $this->layout = 'admin';
+        if ($this->Session->read('Auth.User') && $this->Session->read('Auth.User.username') != 'admin') {
+            return $this->redirect('/');
+        }
     }
 
 

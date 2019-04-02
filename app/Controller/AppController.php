@@ -37,16 +37,16 @@ class AppController extends Controller {
         'FeedbackCommon',
         'Flash',
         'Auth' => [
-	    	'authenticate' => [
-	    		'Form' => [
-	    			'fields' => [
-	    				'username' => 'username',
-	    				'password' => 'password'
-	    			],
+            'authenticate' => [
+                'Form' => [
+                    'fields' => [
+                        'username' => 'username',
+                        'password' => 'password'
+                    ],
                     'passwordHasher' => 'Blowfish'
-	    		]
-	    	]
-	    ]
+                ]
+            ]
+        ]
     ];
 
 

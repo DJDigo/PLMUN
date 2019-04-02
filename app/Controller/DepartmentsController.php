@@ -198,4 +198,44 @@ class DepartmentsController extends AppController {
 
         $this->set(compact('type', 'feedback'));
     }
+
+    public function login() {
+        if ($this->request->is('post')) {
+            $this->Auth->logout();
+            if ($this->Auth->login()) {
+                return $this->redirect('/');
+            } else {
+                $this->Flash->error(__('Invalid username or password.'));
+                return $this->redirect('/departments/login');
+            }
+        }
+    }
+
+    public function logout() {
+        if( $this->Auth->logout() ){
+            return $this->redirect('/departments/login');
+        }
+    }
+
+    public function change_password() {
+        if ($this->request->is('post')) {
+            $data = $this->request->data;
+            if (empty($data['password']) || empty($data['confirm_password'])) {
+                $this->Flash->error(__('Has been failed to change password.'));
+                return $this->redirect(['controller' => 'departments', 'action' => 'change_password']);
+            }
+            if ($data['password'] == $data['confirm_password']) {
+                $this->User = ClassRegistry::init('User');
+                $save_data['User'] = [
+                    'id' => $this->Session->read('Auth.User.id'),
+                    'password' => $data['password']
+                ];
+                if ($this->User->save($save_data)) {
+                    $this->Flash->success(__('Successfully change password.'));
+                    return $this->redirect(['controller' => 'departments', 'action' => 'change_password']);
+                }
+                $this->Flash->error(__('Password didnt match.'));
+            }
+        }
+    }
 }
