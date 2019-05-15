@@ -27,13 +27,13 @@ class Sentiment {
 
 	/**
 	 * Location of the dictionary files
-	 * @var str 
+	 * @var str
 	 */
 	private $dataFolder = '';
 
 	/**
 	 * List of tokens to ignore
-	 * @var array 
+	 * @var array
 	 */
 	private $ignoreList = array();
 
@@ -45,7 +45,7 @@ class Sentiment {
 
 	/**
 	 * Storage of cached dictionaries
-	 * @var array 
+	 * @var array
 	 */
 	private $dictionary = array();
 
@@ -69,7 +69,7 @@ class Sentiment {
 
 	/**
 	 * Token score per class
-	 * @var array 
+	 * @var array
 	 */
 	private $classTokCounts = array(
 		'pos' => 0,
@@ -89,7 +89,7 @@ class Sentiment {
 
 	/**
 	 * Number of tokens in a text
-	 * @var int 
+	 * @var int
 	 */
 	private $tokCount = 0;
 
@@ -130,8 +130,6 @@ class Sentiment {
 	 * @return int Score
 	 */
 	public function score($sentence) {
-		echo "gege";
-		die();
 		//For each negative prefix in the list
 		foreach ($this->negPrefixList as $negPrefix) {
 
@@ -196,7 +194,7 @@ class Sentiment {
 
 	/**
 	 * Get the class of the text based on it's score
-	 * 
+	 *
 	 * @param str $sentence
 	 * @return str pos|neu|neg
 	 */
@@ -366,7 +364,7 @@ class Sentiment {
 
 	/**
 	 * Function to clean a string so all characters with accents are turned into ASCII characters. EG: ‡ = a
-	 * 
+	 *
 	 * @param str $string
 	 * @return str
 	 */
@@ -399,7 +397,7 @@ class Sentiment {
 			$fn = "{$this->dataFolder}data.{$class}.php";
 			if (file_exists($fn)) {
 				unlink($fn);
-			} 
+			}
 		}
 
 		$dictionaries = __DIR__ . '/dictionaries/';
@@ -415,7 +413,7 @@ class Sentiment {
 			file_put_contents($fn, serialize($$data));
 		}
 
-		
+
 
 	}
 

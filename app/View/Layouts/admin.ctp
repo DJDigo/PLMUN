@@ -28,19 +28,19 @@
     echo $this->fetch('css');
     echo $this->fetch('script');
     ?>
-    <link href="../img/common/favicon.png" type="image/png" rel="icon"/>
+		<link href="../img/common/favicon.png" type="image/png" rel="icon"/>
   <?= $this->Html->css('../js/datatables/datatables.min.css') ?>
   <?= $this->Html->script('../js/jquery-3.1.0.min.js') ?>
   <?= $this->Html->script('../js/aos.js') ?>
   <?= $this->Html->script('../js/jquery.dataTables.min.js') ?>
   <?= $this->Html->script('../js/datatables/datatables.min.js') ?>
   <?= $this->Html->script('/js/chartjs.js') ?>
-  <?= $this->Html->script('/js/chartjs-plugin-labels.min.js') ?>
+	<?= $this->Html->script('/js/chartjs-plugin-labels.min.js') ?>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 <body>
-  <?php if ($this->Session->check('Auth.User') && $this->Session->read('Auth.User.username') == 'admin') :  ?>
-    <header class="header">
+	<?php if ($this->Session->check('Auth.User') && $this->Session->read('Auth.User.username') == 'admin') :  ?>
+	<header class="header">
       <?php echo $this->element('admin/header'); ?>
     </header>
     <aside class="sidebar">

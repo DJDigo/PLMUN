@@ -78,6 +78,7 @@ class UsersController extends AppController {
 
     public function get_ratings() {
         $this->autoRender = false;
+        $sentiment = new \PHPInsight\Sentiment();
         $get_type = Configure::read('get_type');
         $type = Configure::read('type');
 
@@ -94,6 +95,24 @@ class UsersController extends AppController {
                 'order' => 'Feedback.type DESC'
             ]);
 
+            $pos = 0;
+            $neg = 0;
+			$neu = 0;
+            foreach ($feedbacks as $feedback) {
+                $class = $sentiment->categorise($feedback['Feedback']['suggestion']);
+                if ($class == 'neg') {
+                    $neg+=1;
+                }
+                if ($class == 'pos') {
+                    $pos+=1;
+                }
+                if ($class == 'neu') {
+                    $neu+=1;
+                }
+            }
+            // pr($feedbacks);
+            // pr('pos: '.$pos.' neg: '.$neg.' neu: '.$neu);
+            // die();
             if ($data['id'] == 6) {
                 $ratings = [
                     'value' => [
@@ -125,10 +144,14 @@ class UsersController extends AppController {
                         [
                             'subordinate' => $get_type[$type['faculty']],
                             'data_value' => $this->get_total_ratings($feedbacks, $type['faculty'])
-                        ]
+                        ],
+                        [
+                            'subordinate' => 'Feedback',
+                            'data_value' => $this->get_feedback_ratings(count($feedbacks), $pos, $neg, $neu)
+                        ],
                     ]
                 ];
-            }
+			}
             return json_encode($ratings);
         }
     }
@@ -167,15 +190,22 @@ class UsersController extends AppController {
             $rating_7 != 0 ? round($number_feedbacks / $rating_7*100) : 100,
             $rating_8 != 0 ? round($number_feedbacks / $rating_8*100) : 100
         ];
-	}
+    }
 
-	public function testing() {
-		$this->autoRender = false;
-		$sentiment = new \PHPInsight\Sentiment();
-		pr($sentiment);
-		// $sentiment = $this->Sentiment;
-		// echo $sentiment->score('Weather today is rubbish');
-		// echo "hehe";
-		die();
-	}
+    private function get_feedback_ratings($total_feedback, $pos, $neg, $neu) {
+        return [
+			$pos != 0 ? round($pos / $total_feedback*100) : 100,
+			$neg != 0 ? round($neg / $total_feedback*100) : 100,
+			$neu != 0 ? round($neu / $total_feedback*100) : 100
+        ];
+    }
+    public function testing() {
+        $this->autoRender = false;
+        $sentiment = new \PHPInsight\Sentiment();
+        pr($sentiment);
+        // $sentiment = $this->Sentiment;
+        // echo $sentiment->score('Weather today is rubbish');
+        // echo "hehe";
+        die();
+    }
 }
