@@ -1,6 +1,6 @@
 <?php
 App::uses('AppController', 'Controller');
-App::import('Vendor', 'PHPInsight/Sentiment.php');
+App::import('Vendor', 'Insight', ['file' => 'phpInsight-master'. DS . 'autoload.php']);
 /**
  * Users Controller
  *
@@ -171,9 +171,11 @@ class UsersController extends AppController {
 
 	public function testing() {
 		$this->autoRender = false;
-		$sentiment = $this->Sentiment;
-		echo $sentiment->score('Weather today is rubbish');
-		echo "hehe";
+		$sentiment = new \PHPInsight\Sentiment();
+		pr($sentiment);
+		// $sentiment = $this->Sentiment;
+		// echo $sentiment->score('Weather today is rubbish');
+		// echo "hehe";
 		die();
 	}
 }
