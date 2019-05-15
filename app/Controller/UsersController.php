@@ -1,5 +1,6 @@
 <?php
 App::uses('AppController', 'Controller');
+App::import('Vendor', 'PHPInsight/Sentiment.php');
 /**
  * Users Controller
  *
@@ -46,7 +47,7 @@ class UsersController extends AppController {
     }
 
     public function index() {
-        
+
     }
 
     public function logout() {
@@ -56,23 +57,23 @@ class UsersController extends AppController {
     }
 
     public function edit_dean() {
-    
+
     }
 
     public function edit_staff() {
-        
+
     }
 
     public function view_department() {
-        
+
     }
 
     public function reviews() {
-        
+
     }
-    
+
     public function view_review() {
-        
+
     }
 
     public function get_ratings() {
@@ -92,7 +93,7 @@ class UsersController extends AppController {
                 'conditions' => $conditions,
                 'order' => 'Feedback.type DESC'
             ]);
-            
+
             if ($data['id'] == 6) {
                 $ratings = [
                     'value' => [
@@ -166,5 +167,13 @@ class UsersController extends AppController {
             $rating_7 != 0 ? round($number_feedbacks / $rating_7*100) : 100,
             $rating_8 != 0 ? round($number_feedbacks / $rating_8*100) : 100
         ];
-    }
+	}
+
+	public function testing() {
+		$this->autoRender = false;
+		$sentiment = $this->Sentiment;
+		echo $sentiment->score('Weather today is rubbish');
+		echo "hehe";
+		die();
+	}
 }

@@ -8,26 +8,26 @@
       <select id="month">
         <option value="">Select Month</option>
         <option value="01">January</option>
-        <option value="02">February</option>  
+        <option value="02">February</option>
         <option value="03">March</option>
         <option value="04">April</option>
-        <option value="05">May</option>  
+        <option value="05">May</option>
         <option value="06">June</option>
         <option value="07">July</option>
-        <option value="08">August</option>  
+        <option value="08">August</option>
         <option value="09">September</option>
         <option value="10">October</option>
-        <option value="11">November</option>  
+        <option value="11">November</option>
         <option value="12">December</option>
-      </select>  
+      </select>
       <select id="dashboard-select">
         <option value="1">CITCS</option>
-        <option value="2">CAS</option>  
+        <option value="2">CAS</option>
         <option value="3">CBA</option>
         <option value="4">CTE</option>
         <option value="5">CCJ</option>
         <option value="6">OFFICES</option>
-      </select>  
+      </select>
     </div>
     <ul class="department">
       <li class="department-list"  data-aos="flip-down" data-aos-duration="1500">
@@ -62,7 +62,7 @@
     </div>
   </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
 <script>
   $(function() {
     const data = [
@@ -145,7 +145,7 @@
             'data_value': [ 50, 50, 50, 50, 50, 50, 50, 50]
           }
         ]
-      }   
+      }
     ];
     let url = "<?php echo $url ?>";
     $('#dashboard-select, #month').on('change', function() {
